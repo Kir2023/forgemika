@@ -1,0 +1,118 @@
+:root {
+  --main-font-family: 'Roboto', sans-serif;
+  --secondary-font-family-family: 'Raleway', sans-serif;
+  --primary-text-color-theme-dark: #434455;
+  --primary-text-color-theme-light: #ffffff;
+  --secondary-text-color-theme-dark: #2e2f42;
+  --secondary-text-color-theme-light: #f4f4fd;
+  --accent-color: #404bbf;
+  --primary-color: #4d5ae5;
+  --portfolio-btn-color: #e7e9fc;
+  --link-customer-color: #8e8f99;
+}
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+body {
+  font-family: var(--main-font-family);
+  color: var(--primary-text-color-theme-dark);
+  background-color: var(--primary-text-color-theme-light);
+  display: flex;
+}
+
+.container {
+  width: 100%;
+  padding: 0 16px;
+}
+
+@media screen and (min-width: 428px) {
+  .container {
+    width: 428px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+    width: 1158px;
+    padding: 0 15px;
+  }
+}
+
+.section {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+@media screen and (min-width: 1158px) {
+  .section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+/* INDEX.HTML */
+
+/* header */
+.page-header {
+  background-color: #8e8f99;
+}
+.contacts-icon {
+  stroke: #4d5ae5;
+  fill: #4d5ae5;
+}
+
+/* main */
+.hero {
+  background-image: url('https://99px.ru/sstorage/53/2019/09/tmb_270957_614379.jpg');
+  min-height: 100vh;
+  min-width: 100vh;
+}
