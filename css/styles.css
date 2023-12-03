@@ -106,6 +106,9 @@ body {
 .page-header {
   background-color: #8e8f99;
 }
+.logo-img {
+  height: 60px;
+}
 .contacts-icon {
   stroke: #4d5ae5;
   fill: #4d5ae5;
