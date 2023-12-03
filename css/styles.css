@@ -47,6 +47,7 @@ body {
   color: var(--primary-text-color-theme-dark);
   background-color: var(--primary-text-color-theme-light);
   display: flex;
+  overflow-x: hidden;
 }
 
 .container {
@@ -112,7 +113,10 @@ body {
 
 /* main */
 .hero {
-  background-image: url('https://99px.ru/sstorage/53/2019/09/tmb_270957_614379.jpg');
-  min-height: 100vh;
-  min-width: 100vh;
+  background-image: url('https://images.wallpaperscraft.ru/image/single/gory_ozero_trava_99494_1920x1080.jpg');
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  margin-left: 0;
+  margin-right: 0;
 }
