@@ -102,6 +102,36 @@ body {
 
 /* INDEX.HTML */
 
+/* slider */
+@keyframes bg-сhange {
+  from {
+    background-image: url(../images/background/slide1.jpg);
+  }
+  20% {
+    background-image: url(../images/background/slide2.jpg);
+  }
+  40% {
+    background-image: url(../images/background/slide3.jpg);
+  }
+  60% {
+    background-image: url(../images/background/slide4.jpg);
+  }
+  80% {
+    background-image: url(../images/background/slide5.jpg);
+  }
+  to {
+    background-image: url(../images/background/slide1.jpg);
+  }
+}
+#bg {
+  position: relative;
+  padding-top: 75%;
+  background-size: cover;
+  animation: bg-сhange 20s infinite;
+  width: 100vw;
+  height: 100vh;
+}
+
 /* header */
 .page-header {
   background-color: #8e8f99;
@@ -114,14 +144,18 @@ body {
   fill: #4d5ae5;
 }
 
-/* main */
-.hero {
-  background-image: url('https://images.wallpaperscraft.ru/image/single/gory_ozero_trava_99494_1920x1080.jpg');
-  background-size: cover;
-  width: 100vw;
-  height: 100vh;
-  margin-left: 0;
-  margin-right: 0;
+/* hero */
+.phone-link {
+  position: absolute;
+  top: 20px;
+  right: 200px;
+  display: flex;
+  align-items: center;
+}
+.call-btn {
+  position: absolute;
+  top: 60px;
+  right: 200px;
 }
 
 /* modal */
