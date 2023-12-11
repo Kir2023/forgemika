@@ -48,6 +48,7 @@ body {
   background-color: var(--primary-text-color-theme-light);
   display: flex;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .container {
@@ -124,7 +125,7 @@ body {
   }
 }
 #bg {
-  position: relative;
+  /* position: relative; */
   padding-top: 75%;
   background-size: cover;
   animation: bg-сhange 20s infinite;
@@ -135,6 +136,7 @@ body {
 /* header */
 .page-header {
   background-color: #8e8f99;
+  min-width: 130px;
 }
 .logo-img {
   height: 60px;
@@ -148,14 +150,16 @@ body {
 .phone-link {
   position: absolute;
   top: 20px;
-  right: 200px;
+  right: 75px;
   display: flex;
   align-items: center;
+  z-index: 100;
 }
 .call-btn {
   position: absolute;
   top: 60px;
-  right: 200px;
+  right: 75px;
+  z-index: 100;
 }
 
 /* modal */
@@ -298,4 +302,130 @@ body {
 .contact-form-submit:hover,
 .contact-form-submit:focus {
   background-color: var(--accent-color);
+}
+
+/* PRODUCTION.HTML */
+
+/* slider */
+.container {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  padding: 0;
+}
+.switch input {
+  display: none;
+}
+.controls {
+  position: absolute;
+  bottom: 40px;
+  left: 55%;
+  top: 60%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 100;
+}
+.controls label {
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+  opacity: 0.4;
+  transition: 0.5s;
+}
+.switch input:nth-child(1):checked ~ .controls label:nth-child(1),
+.switch input:nth-child(2):checked ~ .controls label:nth-child(2),
+.switch input:nth-child(3):checked ~ .controls label:nth-child(3),
+.switch input:nth-child(4):checked ~ .controls label:nth-child(4),
+.switch input:nth-child(5):checked ~ .controls label:nth-child(5),
+.switch input:nth-child(6):checked ~ .controls label:nth-child(6),
+.switch input:nth-child(7):checked ~ .controls label:nth-child(7),
+.switch input:nth-child(8):checked ~ .controls label:nth-child(8) {
+  opacity: 1;
+  width: 50px;
+}
+.wrapper {
+  position: relative;
+  width: 800vw;
+  display: flex;
+  transition: 0.5s;
+}
+.box {
+  background: url(../images/production/category-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 20;
+}
+.wrapper .box {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper .box:nth-child(1) {
+  background: url(../images/production/category-bg.png), url(../images/production/slide1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.wrapper .box:nth-child(2) {
+  background: url(../images/production/category-bg.png), url(../images/production/slide2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.wrapper .box:nth-child(3) {
+  background: url(../images/production/category-bg.png), url(../images/production/slide3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.wrapper .box:nth-child(4) {
+  background: url(../images/production/category-bg.png), url(../images/production/slide4.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.wrapper .box:nth-child(5) {
+  background: url(../images/production/category-bg.png), url(../images/production/slide5.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.wrapper .box:nth-child(6) {
+  background: url(../images/production/category-bg.png), url(../images/production/slide6.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.wrapper .box:nth-child(7) {
+  background: url(../images/production/category-bg.png), url(../images/production/slide7.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.wrapper .box:nth-child(8) {
+  background: url(../images/production/category-bg.png), url(../images/production/slide8.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.switch input:nth-child(1):checked ~ .wrapper {
+  left: 0;
+}
+.switch input:nth-child(2):checked ~ .wrapper {
+  left: -100vw;
+}
+.switch input:nth-child(3):checked ~ .wrapper {
+  left: -200vw;
+}
+.switch input:nth-child(4):checked ~ .wrapper {
+  left: -300vw;
+}
+.switch input:nth-child(5):checked ~ .wrapper {
+  left: -400vw;
+}
+.switch input:nth-child(6):checked ~ .wrapper {
+  left: -500vw;
+}
+.switch input:nth-child(7):checked ~ .wrapper {
+  left: -600vw;
+}
+.switch input:nth-child(8):checked ~ .wrapper {
+  left: -700vw;
 }
