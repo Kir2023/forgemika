@@ -687,12 +687,6 @@ body {
 /* CONTACTS.HTML */
 
 /* hero */
-.contacts-page-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  margin-top: 86px;
-}
 .contacts-hero {
   background: url(../images/contacts/contacts-bg.jpg);
   background-repeat: no-repeat;
@@ -701,6 +695,12 @@ body {
   height: 100vh;
   width: 100vw;
   position: absolute;
+}
+.contacts-page-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 86px;
 }
 .contacts-heder {
   font-size: 44px;
