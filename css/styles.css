@@ -696,6 +696,47 @@ body {
   width: 100vw;
   position: absolute;
 }
+.phone-link-contacts {
+  color: aqua;
+  position: absolute;
+  top: 2%;
+  right: 13%;
+  display: flex;
+  align-items: center;
+  z-index: 100;
+}
+.phone-link-contacts:hover,
+.phone-link-contacts:hover .contacts-icon,
+.phone-link-contacts:focus,
+.phone-link-contacts:focus .contacts-icon {
+  color: #4d5ae5;
+  stroke: #4d5ae5;
+  fill: #4d5ae5;
+}
+.call-btn-contacts {
+  position: absolute;
+  top: 5.5%;
+  right: 13%;
+  min-width: 169px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  background-color: aqua;
+  color: var(--primary-text-color-theme-light);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 100;
+}
+.call-btn-contacts:hover,
+.call-btn-contacts:focus {
+  background-color: #404bbf;
+}
 .contacts-page-container {
   display: flex;
   align-items: center;
