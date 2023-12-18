@@ -1,20 +1,55 @@
-(() => {
-  const mobileMenu = document.querySelector('.js-menu-container');
-  const openMenuBtn = document.querySelector('.js-open-menu');
-  const closeMenuBtn = document.querySelector('.js-close-menu');
+!(function (e) {
+  'function' != typeof e.matches &&
+    (e.matches =
+      e.msMatchesSelector ||
+      e.mozMatchesSelector ||
+      function (e) {
+        for (
+          var t = this, o = (t.document || t.ownerDocument).querySelectorAll(e), n = 0;
+          o[n] && o[n] !== t;
 
-  const toggleMenu = () => {
-    const isMenuOpen = openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
-    openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
-    mobileMenu.classList.toggle('is-open');
-  };
+        )
+          ++n;
+        return Boolean(o[n]);
+      }),
+    'function' != typeof e.closest &&
+      (e.closest = function (e) {
+        for (var t = this; t && 1 === t.nodeType; ) {
+          if (t.matches(e)) return t;
+          t = t.parentNode;
+        }
+        return null;
+      });
+})(window.Element.prototype);
 
-  openMenuBtn.addEventListener('click', toggleMenu);
-  closeMenuBtn.addEventListener('click', toggleMenu);
+document.addEventListener('DOMContentLoaded', function () {
+  var mobileButtons = document.querySelectorAll('.js-open-mobile'),
+    overlayMobile = document.querySelector('.js-overlay-mobile'),
+    closeButtons = document.querySelectorAll('.data-mobile-close');
 
-  window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
-    if (!e.matches) return;
-    mobileMenu.classList.remove('is-open');
-    openMenuBtn.setAttribute('aria-expanded', false);
+  mobileButtons.forEach(function (item) {
+    item.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      var mobileId = this.getAttribute('data-mobile'),
+        mobileElem = document.querySelector('.mobile-menu[data-mobile="' + mobileId + '"]');
+
+      mobileElem.classList.add('active');
+      overlayMobile.classList.add('active');
+    });
   });
-})();
+
+  closeButtons.forEach(function (item) {
+    item.addEventListener('click', function (e) {
+      var parentMobile = this.closest('.mobile-menu');
+
+      parentMobile.classList.remove('active');
+      overlayMobile.classList.remove('active');
+    });
+  });
+
+  overlayMobile.addEventListener('click', function () {
+    document.querySelector('.mobile-menu.active').classList.remove('active');
+    this.classList.remove('active');
+  });
+});
