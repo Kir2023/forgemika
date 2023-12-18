@@ -688,7 +688,11 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  .container {
+    padding-left: 65px;
+  }
   .controls {
+    padding-left: 130px;
     left: 50%;
     top: 60%;
   }
