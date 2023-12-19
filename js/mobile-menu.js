@@ -25,7 +25,8 @@
 document.addEventListener('DOMContentLoaded', function () {
   var mobileButtons = document.querySelectorAll('.js-open-mobile'),
     overlayMobile = document.querySelector('.js-overlay-mobile'),
-    closeButtons = document.querySelectorAll('.data-mobile-close');
+    closeButtons = document.querySelectorAll('.data-mobile-close'),
+    body = document.querySelector('body');
 
   mobileButtons.forEach(function (item) {
     item.addEventListener('click', function (e) {
@@ -36,6 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       mobileElem.classList.add('active');
       overlayMobile.classList.add('active');
+      body.style.overflow = 'hidden';
     });
   });
 
@@ -45,11 +47,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
       parentMobile.classList.remove('active');
       overlayMobile.classList.remove('active');
+      body.style.overflow = '';
     });
   });
 
   overlayMobile.addEventListener('click', function () {
     document.querySelector('.mobile-menu.active').classList.remove('active');
     this.classList.remove('active');
+    body.style.overflow = '';
   });
 });
