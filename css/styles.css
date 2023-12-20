@@ -280,6 +280,7 @@ main {
     z-index: 1000;
     max-width: 35%;
     transform: translate(0);
+    overflow: auto;
     z-index: 1001;
   }
   .mobile-menu-container {
