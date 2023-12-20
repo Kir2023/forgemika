@@ -52,6 +52,11 @@ body {
   display: flex;
 }
 
+main {
+  min-height: 100vh;
+  width: 100%;
+}
+
 /* INDEX.HTML */
 
 /* header */
@@ -59,7 +64,7 @@ body {
   background-color: #8e8f99;
   min-width: 130px;
   z-index: 2000;
-  min-height: 100%;
+  min-height: 100vh;
 }
 .logo-img {
   height: 80px;
@@ -158,7 +163,7 @@ body {
   background-size: cover;
   animation: bg-сhange 20s infinite;
   width: 100%;
-  height: 100%;
+  min-height: 100vh;
 }
 .phone-section {
   padding-top: 24px;
@@ -524,7 +529,7 @@ body {
 /* slider */
 .container {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   overflow: hidden;
   position: absolute;
   top: 0;
@@ -739,8 +744,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 100vh;
-  position: absolute;
+  min-height: 100vh;
 }
 .about-heder {
   color: var(--primary-color);
@@ -785,12 +789,10 @@ body {
 /* CONTACTS.HTML */
 
 /* hero */
-main {
+.contacts-main {
   background-image: url(../images/contacts/contacts-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
-  width: 100%;
 }
 .contacts-page-container {
   display: flex;
