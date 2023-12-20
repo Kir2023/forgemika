@@ -85,9 +85,6 @@ main {
   padding-right: 12px;
   padding-left: 12px;
 }
-.language-menu-item {
-  width: calc((100%-24px) / 3);
-}
 .navigation-menu {
   padding-bottom: 20px;
 }
