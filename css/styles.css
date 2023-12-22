@@ -67,7 +67,6 @@ main {
   min-height: 100vh;
 }
 .logo-img {
-  height: 80px;
   margin: 0 auto;
   padding-top: 20px;
 }
@@ -313,9 +312,8 @@ main {
     padding: 0;
   }
   .mobile-logo-img {
-    height: 80px;
     margin: 0 auto;
-    margin-top: 70px;
+    margin-top: 40px;
   }
   .mobile-language-menu {
     display: flex;
