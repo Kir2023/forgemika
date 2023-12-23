@@ -174,12 +174,10 @@ main {
   min-height: 100vh;
 }
 .phone-section {
-  /* position: absolute; */
   padding-top: 24px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  /* right: 0; */
   gap: 12px;
   padding-right: 24px;
 }
@@ -558,7 +556,6 @@ main {
 
 .carousel-container {
   width: 100%;
-  min-height: 100vh;
   overflow: hidden;
   position: absolute;
   top: 0;
@@ -571,6 +568,7 @@ main {
   overflow-x: scroll;
   scroll-behavior: smooth;
   -ms-overflow-style: none;
+  min-height: 100vh;
 }
 
 .carousel::-webkit-scrollbar {
@@ -579,68 +577,69 @@ main {
 
 .carousel__item {
   width: 100%;
-  height: 100vh;
   flex-shrink: 0;
   scroll-snap-align: start;
-}
-
-.carousel__image {
-  display: block;
-  height: 100vh;
-  width: 100%;
+  position: relative;
 }
 
 .slide-1 {
-  background-image: url(../images/production/category-bg.png), url(../images/production/slide1.jpg);
+  background-image: url(../images/production/slide1.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 .slide-2 {
-  background-image: url(../images/production/category-bg.png), url(../images/production/slide2.jpg);
+  background-image: url(../images/production/slide2.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 .slide-3 {
-  background-image: url(../images/production/category-bg.png), url(../images/production/slide3.jpg);
+  background-image: url(../images/production/slide3.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 .slide-4 {
-  background-image: url(../images/production/category-bg.png), url(../images/production/slide4.jpg);
+  background-image: url(../images/production/slide4.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 .slide-5 {
-  background-image: url(../images/production/category-bg.png), url(../images/production/slide5.jpg);
+  background-image: url(../images/production/slide5.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 .slide-6 {
-  background-image: url(../images/production/category-bg.png), url(../images/production/slide6.jpg);
+  background-image: url(../images/production/slide6.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 .slide-7 {
-  background-image: url(../images/production/category-bg.png), url(../images/production/slide7.jpg);
+  background-image: url(../images/production/slide7.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 .slide-8 {
-  background-image: url(../images/production/category-bg.png), url(../images/production/slide8.jpg);
+  background-image: url(../images/production/slide8.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 .slide-9 {
-  background-image: url(../images/production/category-bg.png), url(../images/production/slide9.jpg);
+  background-image: url(../images/production/slide9.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 .controls {
-  position: absolute;
   bottom: 40px;
-  transform: translateX(-50%);
   display: flex;
   gap: 10px;
   z-index: 100;
@@ -674,11 +673,25 @@ main {
 }
 
 /* hero */
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .production {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 250px;
+  justify-content: center;
+  text-align: center;
+  margin-top: 12vh;
+  height: 375px;
+  width: 95%;
+  max-width: 600px;
+  background-image: url('/images/production/category-bg.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .production-heder {
   color: var(--primary-text-color-theme-light);
@@ -711,10 +724,6 @@ main {
   body {
     overflow-y: auto;
   }
-  .controls {
-    left: 50%;
-    top: 60%;
-  }
   .production {
     gap: 16px;
     margin-left: 0;
@@ -728,28 +737,9 @@ main {
   }
 }
 
-@media screen and (max-width: 1023px) {
-  .slide-1,
-  .slide-2,
-  .slide-3,
-  .slide-4,
-  .slide-5,
-  .slide-6,
-  .slide-7,
-  .slide-8,
-  .slide-9 {
-    background-size: 95%, cover;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .carousel {
     margin-left: 220px;
-  }
-  .controls {
-    padding-left: 230px;
-    left: 50%;
-    top: 60%;
   }
   .production {
     gap: 32px;
@@ -757,20 +747,6 @@ main {
   .production-list-btn {
     min-width: 169px;
     padding: 12px 24px;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .slide-1,
-  .slide-2,
-  .slide-3,
-  .slide-4,
-  .slide-5,
-  .slide-6,
-  .slide-7,
-  .slide-8,
-  .slide-9 {
-    background-size: auto, cover;
   }
 }
 
