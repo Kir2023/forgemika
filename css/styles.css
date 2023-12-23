@@ -526,6 +526,7 @@ main {
   position: absolute;
   top: 0;
   right: 0;
+  background-color: #8e8f99;
 }
 .carousel {
   display: flex;
@@ -645,7 +646,7 @@ main {
   height: 375px;
   width: 95%;
   max-width: 600px;
-  background-image: url('/images/production/category-bg.png');
+  background-image: url(../images/production/category-bg.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;

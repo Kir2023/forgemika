@@ -1,4 +1,4 @@
-document.querySelector('#controls').addEventListener('click', event => {
+document.querySelector('.controls').addEventListener('click', event => {
   const $slide = document.querySelector(event.target.getAttribute('href'));
   if (!$slide) return;
 
