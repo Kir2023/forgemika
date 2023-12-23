@@ -520,40 +520,6 @@ main {
 /* PRODUCTION.HTML */
 
 /* slider */
-/* .container {
-  width: 100%;
-  min-height: 100vh;
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-.switch input {
-  display: none;
-}
-.controls label {
-  width: 20px;
-  height: 20px;
-  background: #fff;
-  border-radius: 20px;
-  cursor: pointer;
-  opacity: 0.4;
-  transition: 0.5s;
-}
-.wrapper {
-  position: relative;
-  width: 800vw;
-  display: flex;
-  transition: 0.5s;
-}
-.wrapper .box {
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-
 .carousel-container {
   width: 100%;
   overflow: hidden;
@@ -561,7 +527,6 @@ main {
   top: 0;
   right: 0;
 }
-
 .carousel {
   display: flex;
   scroll-snap-type: x mandatory;
@@ -570,25 +535,21 @@ main {
   -ms-overflow-style: none;
   min-height: 100vh;
 }
-
 .carousel::-webkit-scrollbar {
   display: none;
 }
-
 .carousel__item {
   width: 100%;
   flex-shrink: 0;
   scroll-snap-align: start;
   position: relative;
 }
-
 .slide-1 {
   background-image: url(../images/production/slide1.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-
 .slide-2 {
   background-image: url(../images/production/slide2.jpg);
   background-repeat: no-repeat;
@@ -637,14 +598,12 @@ main {
   background-position: center;
   background-size: cover;
 }
-
 .controls {
   bottom: 40px;
   display: flex;
   gap: 10px;
   z-index: 100;
 }
-
 .controls__dot {
   width: 20px;
   height: 20px;
@@ -653,14 +612,12 @@ main {
   cursor: pointer;
   opacity: 0.4;
   transition: 0.5s;
-
   &:hover,
   &:focus {
     opacity: 1;
     width: 50px;
   }
 }
-
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -718,6 +675,18 @@ main {
 .production-list-btn:hover,
 .production-list-btn:focus {
   background-color: var(--accent-color);
+}
+
+@media screen and (max-width: 424px) {
+  .controls__dot {
+    height: 15px;
+    width: 15px;
+    &:hover,
+    &:focus {
+      opacity: 1;
+      width: 35px;
+    }
+  }
 }
 
 @media screen and (max-width: 767px) {
