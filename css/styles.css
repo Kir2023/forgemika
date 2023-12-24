@@ -3,14 +3,11 @@
 :root {
   --main-font-family: 'Roboto', sans-serif;
   --secondary-font-family-family: 'Raleway', sans-serif;
-  --primary-text-color-theme-dark: #434455;
-  --primary-text-color-theme-light: #ffffff;
-  --secondary-text-color-theme-dark: #2e2f42;
-  --secondary-text-color-theme-light: #f4f4fd;
-  --accent-color: #404bbf;
-  --primary-color: #4d5ae5;
-  --portfolio-btn-color: #e7e9fc;
-  --link-customer-color: #8e8f99;
+
+  --menu-color: #7d7d7d;
+  --active-elements-color: #fed700;
+  --main-text-color: #000000;
+  --secondary-text-color: #fefefe;
 }
 .list {
   list-style: none;
@@ -47,8 +44,6 @@ img {
 
 body {
   font-family: var(--main-font-family);
-  color: var(--primary-text-color-theme-dark);
-  background-color: var(--primary-text-color-theme-light);
   display: flex;
 }
 
@@ -61,7 +56,7 @@ main {
 
 /* header */
 .page-header {
-  background-color: #8e8f99;
+  background-color: var(--menu-color);
   min-width: 220px;
   z-index: 999;
   min-height: 100vh;
@@ -95,7 +90,7 @@ main {
   align-items: center;
 }
 .navigation-item {
-  color: var(--accent-color);
+  color: var(--active-elements-color);
 }
 .current-page {
   font-weight: bold;
@@ -109,11 +104,16 @@ main {
   height: 4px;
   left: 0px;
   bottom: -2.5px;
-  background: var(--accent-color);
+  background: var(--active-elements-color);
   border-radius: 2px;
 }
 .navigation-link {
-  color: aquamarine;
+  font-size: 18px;
+  color: var(--main-text-color);
+}
+.blog {
+  font-size: 24px;
+  color: var(--secondary-text-color);
 }
 .social-media-list {
   display: flex;
@@ -125,9 +125,10 @@ main {
   padding-right: 16px;
 }
 .social-media-link {
+  font-size: 18px;
   display: flex;
   align-items: center;
-  color: aqua;
+  color: var(--secondary-text-color);
 }
 .social-media-link:hover .contacts-icon,
 .social-media-link:hover,
@@ -135,13 +136,13 @@ main {
 .social-media-link:focus .contacts-icon,
 .social-media-link:focus,
 .navigation-link:focus {
-  color: #4d5ae5;
-  stroke: #4d5ae5;
-  fill: #4d5ae5;
+  color: var(--active-elements-color);
+  stroke: var(--active-elements-color);
+  fill: var(--active-elements-color);
 }
 .contacts-icon {
-  stroke: aqua;
-  fill: aqua;
+  stroke: var(--secondary-text-color);
+  fill: var(--secondary-text-color);
 }
 
 /* hero */
@@ -182,7 +183,8 @@ main {
   padding-right: 24px;
 }
 .phone-link {
-  color: aqua;
+  font-size: 18px;
+  color: var(--secondary-text-color);
   display: flex;
   align-items: center;
   z-index: 100;
@@ -191,9 +193,9 @@ main {
 .phone-link:hover .contacts-icon,
 .phone-link:focus,
 .phone-link:focus .contacts-icon {
-  color: #4d5ae5;
-  stroke: #4d5ae5;
-  fill: #4d5ae5;
+  color: var(--active-elements-color);
+  stroke: var(--active-elements-color);
+  fill: var(--active-elements-color);
 }
 .call-btn {
   border: none;
@@ -203,15 +205,15 @@ main {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  background-color: aqua;
-  color: var(--primary-text-color-theme-light);
+  background-color: var(--secondary-text-color);
+  color: var(--main-text-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 100;
 }
 .call-btn:hover,
 .call-btn:focus {
-  background-color: #404bbf;
+  background-color: var(--active-elements-color);
 }
 
 @media screen and (max-width: 767px) {
@@ -247,7 +249,7 @@ main {
     z-index: 500;
   }
   .mobile-menu-open-btn-icon {
-    stroke: aqua;
+    stroke: var(--secondary-text-color);
   }
 
   .backdrop-mobile {
@@ -272,7 +274,7 @@ main {
     transform: translate(-50%, -50%);
     min-width: 180px;
     height: 100%;
-    background-color: var(--secondary-text-color-theme-dark);
+    background-color: var(--menu-color);
     pointer-events: none;
     transform: translate(-100%);
     transition: transform 0.5s;
@@ -306,8 +308,8 @@ main {
     justify-content: center;
     width: 24px;
     height: 24px;
-    background-color: var(--portfolio-btn-color);
-    border: 1px solid var(--secondary-text-color-theme-dark);
+    background-color: var(--secondary-text-color);
+    border: 1px solid var(--main-text-color);
     border-radius: 50%;
     padding: 0;
   }
@@ -334,7 +336,7 @@ main {
     align-items: center;
   }
   .mobile-navigation-link {
-    color: aquamarine;
+    color: var(--main-text-color);
   }
   .mobile-social-media-list {
     display: flex;
@@ -346,7 +348,7 @@ main {
   .mobile-social-media-link {
     display: flex;
     align-items: center;
-    color: aqua;
+    color: var(--secondary-text-color);
     font-size: 12px;
   }
   .mobile-social-media-link:hover .mobile-contacts-icon,
@@ -355,13 +357,13 @@ main {
   .mobile-social-media-link:focus .mobile-contacts-icon,
   .mobile-social-media-link:focus,
   .mobile-navigation-link:focus {
-    color: #4d5ae5;
-    stroke: #4d5ae5;
-    fill: #4d5ae5;
+    color: var(--active-elements-color);
+    stroke: var(--active-elements-color);
+    fill: var(--active-elements-color);
   }
   .mobile-contacts-icon {
-    stroke: aqua;
-    fill: aqua;
+    stroke: var(--secondary-text-color);
+    fill: var(--secondary-text-color);
   }
 }
 @media screen and (min-width: 768px) {
@@ -399,7 +401,7 @@ main {
   transform: translate(-50%, -50%);
   max-width: 95%;
   max-height: 376px;
-  background-color: #fcfcfc;
+  background-color: var(--secondary-text-color);
   border-radius: 15px;
   transition: transform var(--transition-duration-function);
   padding: 32px 24px;
@@ -422,7 +424,7 @@ main {
   height: 24px;
   padding-left: 0;
   padding-right: 0;
-  background-color: var(--portfolio-btn-color);
+  background-color: var(--menu-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -430,15 +432,15 @@ main {
 }
 .modal-close-btn:hover,
 .modal-close-btn:focus {
-  background-color: var(--accent-color);
+  background-color: var(--active-elements-color);
   border: none;
 }
 .modal-close-btn:hover .modal-close-icon,
 .modal-close-btn:focus .modal-close-icon {
-  fill: #ffffff;
+  fill: var(--secondary-text-color);
 }
 .modal-close-icon {
-  fill: var(--secondary-text-color-theme-dark);
+  fill: var(--main-text-colorma);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-text {
@@ -448,7 +450,7 @@ main {
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.02em;
-  color: var(--secondary-text-color-theme-dark);
+  color: var(--main-text-color);
   margin-bottom: 16px;
 }
 .contact-form-wrapper {
@@ -462,7 +464,7 @@ main {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: var(--link-customer-color);
+  color: var(--menu-color);
 }
 .contact-form-input-wrapper {
   position: relative;
@@ -478,7 +480,7 @@ main {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-form-input:focus {
-  border-color: var(--primary-color);
+  border-color: var(--active-elements-color);
 }
 .contact-form-input-icon {
   position: absolute;
@@ -486,11 +488,11 @@ main {
   left: 16px;
   transform: translateY(-50%);
   display: block;
-  fill: var(--secondary-text-color-theme-dark);
+  fill: var(--main-text-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-form-input:focus + .contact-form-input-icon {
-  fill: var(--primary-color);
+  fill: var(--active-elements-color);
 }
 .contact-form-wrapper-field {
   margin-bottom: 16px;
@@ -507,14 +509,14 @@ main {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  background-color: var(--primary-color);
-  color: var(--primary-text-color-theme-light);
+  background-color: var(--menu-color);
+  color: var(--main-text-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-form-submit:hover,
 .contact-form-submit:focus {
-  background-color: var(--accent-color);
+  background-color: var(--active-elements-color);
 }
 
 /* PRODUCTION.HTML */
@@ -526,7 +528,7 @@ main {
   position: absolute;
   top: 0;
   right: 0;
-  background-color: #8e8f99;
+  background-color: var(--menu-color);
 }
 .carousel {
   display: flex;
@@ -608,7 +610,7 @@ main {
 .controls__dot {
   width: 20px;
   height: 20px;
-  background: #fff;
+  background: var(--secondary-text-color);
   border-radius: 20px;
   cursor: pointer;
   opacity: 0.4;
@@ -617,7 +619,7 @@ main {
   &:focus {
     opacity: 1;
     width: 50px;
-    background: #404bbf;
+    background: var(--active-elements-color);
   }
 }
 .current-dot {
@@ -627,7 +629,7 @@ main {
   &:focus {
     opacity: 1;
     width: 50px;
-    background: #fff;
+    background: var(--secondary-text-color);
     cursor: auto;
   }
 }
@@ -664,10 +666,10 @@ main {
   background-position: center;
 }
 .production-heder {
-  color: var(--primary-text-color-theme-light);
+  color: var(--secondary-text-color);
 }
 .lupa-icon {
-  fill: var(--primary-text-color-theme-light);
+  fill: var(--main-text-color);
 }
 .production-list-btn {
   display: flex;
@@ -680,14 +682,14 @@ main {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  background-color: var(--primary-color);
-  color: var(--primary-text-color-theme-light);
+  background-color: var(--secondary-text-color);
+  color: var(--main-text-colorm);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .production-list-btn:hover,
 .production-list-btn:focus {
-  background-color: var(--accent-color);
+  background-color: var(--active-elements-color);
 }
 
 @media screen and (max-width: 424px) {
@@ -749,11 +751,11 @@ main {
   min-height: 100vh;
 }
 .about-heder {
-  color: var(--primary-color);
+  color: var(--main-text-color);
   display: block;
 }
 .about-text {
-  color: var(--primary-color);
+  color: var(--main-text-color);
 }
 
 @media screen and (max-width: 767px) {
@@ -803,17 +805,17 @@ main {
   align-items: center;
 }
 .contacts-heder {
-  color: var(--primary-color);
+  color: var(--main-text-color);
   display: block;
 }
 .contacts-form-container {
-  border: 2px solid #4d5ae5;
-  background-color: #2e2f42;
+  border: 2px solid var(--main-text-color);
+  background-color: var(--menu-color);
 }
 .contacts-form-heder {
   text-align: center;
   padding-top: 12px;
-  color: var(--primary-text-color-theme-light);
+  color: var(--main-text-color);
 }
 .contacts-form-field-wrapper {
   display: block;
@@ -822,7 +824,7 @@ main {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: var(--link-customer-color);
+  color: var(--main-text-color);
 }
 .contacts-form-input-wrapper {
   position: relative;
@@ -839,7 +841,7 @@ main {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts-form-input:focus {
-  border-color: var(--primary-color);
+  border-color: var(--active-elements-color);
 }
 .contacts-form-input-icon {
   position: absolute;
@@ -847,11 +849,11 @@ main {
   left: 16px;
   transform: translateY(-50%);
   display: block;
-  fill: var(--secondary-text-color-theme-dark);
+  fill: var(--main-text-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts-form-input:focus + .contacts-form-input-icon {
-  fill: var(--primary-color);
+  fill: var(--active-elements-color);
 }
 .contacts-form-wrapper-field {
   margin-bottom: 16px;
@@ -863,7 +865,7 @@ main {
   width: 100%;
   font-size: 12px;
   letter-spacing: 0.04em;
-  color: rgba(46, 47, 66, 0.4);
+  color: var(--main-text-color);
   padding: 8px 16px;
   line-height: 1.17;
   border: 1px solid rgba(46, 47, 66, 0.2);
@@ -874,7 +876,7 @@ main {
 }
 .contacts-form-message:focus {
   outline: none;
-  border-color: var(--primary-color);
+  border-color: var(--main-text-color);
 }
 .contacts-form-submit {
   display: block;
@@ -886,34 +888,34 @@ main {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  background-color: var(--primary-color);
-  color: var(--primary-text-color-theme-light);
+  background-color: var(--secondary-text-color);
+  color: var(--main-text-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts-form-submit:hover,
 .contacts-form-submit:focus {
-  background-color: var(--accent-color);
+  background-color: var(--active-elements-color);
 }
 .adres-heder {
-  color: var(--primary-color);
+  color: var(--main-text-color);
   padding-bottom: 12px;
 }
 .adres-text {
-  color: var(--primary-color);
+  color: var(--main-text-color);
 }
 .adres-link {
   display: flex;
   align-items: center;
-  color: aqua;
+  color: var(--secondary-text-color);
 }
 .adres-link:hover,
 .adres-link:focus,
 .adres-link:hover .contacts-icon,
 .adres-link:focus .contacts-icon {
-  color: var(--accent-color);
-  fill: var(--accent-color);
-  stroke: var(--accent-color);
+  color: var(--active-elements-color);
+  fill: var(--active-elements-color);
+  stroke: var(--active-elements-color);
 }
 
 @media screen and (max-width: 767px) {
