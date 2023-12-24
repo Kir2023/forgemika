@@ -696,7 +696,6 @@ main {
     width: 15px;
     &:hover,
     &:focus {
-      opacity: 1;
       width: 35px;
     }
   }
