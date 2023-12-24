@@ -617,6 +617,18 @@ main {
   &:focus {
     opacity: 1;
     width: 50px;
+    background: #404bbf;
+  }
+}
+.current-dot {
+  opacity: 1;
+  width: 50px;
+  &:hover,
+  &:focus {
+    opacity: 1;
+    width: 50px;
+    background: #fff;
+    cursor: auto;
   }
 }
 .visuallyhidden {
@@ -684,9 +696,14 @@ main {
     width: 15px;
     &:hover,
     &:focus {
-      opacity: 1;
       width: 35px;
     }
+  }
+  .current-dot {
+  width: 35px;
+  &:hover,
+  &:focus {
+    width: 35px;
   }
 }
 
