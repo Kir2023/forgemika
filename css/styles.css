@@ -1,9 +1,8 @@
 /* GENERAL */
 
 :root {
-  --main-font-family: 'Roboto', sans-serif;
-  --secondary-font-family-family: 'Raleway', sans-serif;
-
+  --main-font-family: 'Arial Bold', sans-serif;
+  --blog-font-family: 'Monotype Corsiva', sans-serif;
   --menu-color: #7d7d7d;
   --active-elements-color: #fed700;
   --main-text-color: #000000;
@@ -57,7 +56,7 @@ main {
 /* header */
 .page-header {
   background-color: var(--menu-color);
-  min-width: 220px;
+  min-width: 250px;
   z-index: 999;
   min-height: 100vh;
 }
@@ -108,10 +107,13 @@ main {
   border-radius: 2px;
 }
 .navigation-link {
+  font-family: var(--main-font-family);
+  font-weight: bold;
   font-size: 18px;
   color: var(--main-text-color);
 }
 .blog {
+  font-family: Monotype Corsiva;
   font-size: 24px;
   color: var(--secondary-text-color);
 }
@@ -125,6 +127,7 @@ main {
   padding-right: 16px;
 }
 .social-media-link {
+  font-family: var(--main-font-family);
   font-size: 18px;
   display: flex;
   align-items: center;
@@ -183,6 +186,7 @@ main {
   padding-right: 24px;
 }
 .phone-link {
+  font-family: var(--main-font-family);
   font-size: 18px;
   color: var(--secondary-text-color);
   display: flex;
@@ -201,8 +205,9 @@ main {
   border: none;
   max-width: 196px;
   border-radius: 4px;
+  font-family: var(--main-font-family);
   font-weight: 500;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   background-color: var(--secondary-text-color);
@@ -223,6 +228,7 @@ main {
   .call-btn {
     min-width: 100px;
     padding: 6px 12px;
+    font-size: 16px;
   }
 }
 
@@ -288,7 +294,7 @@ main {
     visibility: visible;
     pointer-events: auto;
     z-index: 1000;
-    max-width: 35%;
+    max-width: 50%;
     transform: translate(0);
     overflow: auto;
     z-index: 1001;
@@ -336,6 +342,9 @@ main {
     align-items: center;
   }
   .mobile-navigation-link {
+    font-family: var(--main-font-family);
+    font-weight: bold;
+    font-size: 16px;
     color: var(--main-text-color);
   }
   .mobile-social-media-list {
@@ -346,10 +355,11 @@ main {
     align-items: center;
   }
   .mobile-social-media-link {
+    font-family: var(--main-font-family);
+    font-size: 12px;
     display: flex;
     align-items: center;
     color: var(--secondary-text-color);
-    font-size: 12px;
   }
   .mobile-social-media-link:hover .mobile-contacts-icon,
   .mobile-social-media-link:hover,
@@ -445,8 +455,8 @@ main {
 }
 .modal-text {
   font-family: var(--main-font-family);
-  font-weight: 500;
-  font-size: 16px;
+  font-weight: bold;
+  font-size: 18px;
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.02em;
@@ -505,6 +515,7 @@ main {
   padding: 16px 32px;
   border: none;
   border-radius: 4px;
+  font-family: var(--main-font-family);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -666,6 +677,8 @@ main {
   background-position: center;
 }
 .production-heder {
+  font-family: var(--main-font-family);
+  font-weight: bold;
   color: var(--secondary-text-color);
 }
 .lupa-icon {
@@ -679,7 +692,8 @@ main {
   border: none;
   border-radius: 4px;
   font-weight: 500;
-  font-size: 16px;
+  font-family: var(--main-font-family);
+  font-size: 18px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   background-color: var(--secondary-text-color);
@@ -722,6 +736,7 @@ main {
     font-size: 16px;
   }
   .production-list-btn {
+    font-size: 16px;
     min-width: 100px;
     padding: 6px 12px;
   }
@@ -751,10 +766,13 @@ main {
   min-height: 100vh;
 }
 .about-heder {
+  font-family: var(--main-font-family);
+  font-weight: bold;
   color: var(--main-text-color);
   display: block;
 }
 .about-text {
+  font-weight: var(--main-font-family);
   color: var(--main-text-color);
 }
 
@@ -805,6 +823,8 @@ main {
   align-items: center;
 }
 .contacts-heder {
+  font-family: var(--main-font-family);
+  font-weight: bold;
   color: var(--main-text-color);
   display: block;
 }
@@ -813,6 +833,7 @@ main {
   background-color: var(--menu-color);
 }
 .contacts-form-heder {
+  font-family: var(--main-font-family);
   text-align: center;
   padding-top: 12px;
   color: var(--main-text-color);
@@ -840,7 +861,8 @@ main {
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contacts-form-input:focus {
+.contacts-form-input:focus,
+.contacts-form-message:focus {
   border-color: var(--active-elements-color);
 }
 .contacts-form-input-icon {
@@ -874,16 +896,13 @@ main {
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contacts-form-message:focus {
-  outline: none;
-  border-color: var(--main-text-color);
-}
 .contacts-form-submit {
   display: block;
   margin-left: auto;
   margin-right: auto;
   border: none;
   border-radius: 4px;
+  font-family: var(--main-font-family);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -898,13 +917,17 @@ main {
   background-color: var(--active-elements-color);
 }
 .adres-heder {
+  font-family: var(--main-font-family);
+  font-weight: bold;
   color: var(--main-text-color);
   padding-bottom: 12px;
 }
 .adres-text {
+  font-family: var(--main-font-family);
   color: var(--main-text-color);
 }
 .adres-link {
+  font-family: var(--main-font-family);
   display: flex;
   align-items: center;
   color: var(--secondary-text-color);
