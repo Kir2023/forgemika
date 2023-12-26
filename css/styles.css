@@ -2,7 +2,7 @@
 
 :root {
   --main-font-family: 'Arimo', sans-serif;
-  --blog-font-family: 'Italianno', cursive;
+  --blog-font-family: 'Pattaya', sans-serif;
   --menu-color: #7d7d7d;
   --active-elements-color: #fed700;
   --main-text-color: #000000;
@@ -113,7 +113,7 @@ main {
   color: var(--main-text-color);
 }
 .blog {
-  font-family: Monotype Corsiva;
+  font-family: var(--blog-font-family);
   font-size: 24px;
   color: var(--secondary-text-color);
 }
