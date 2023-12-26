@@ -344,7 +344,7 @@ main {
     flex-direction: column;
     gap: 12px;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
   }
   .mobile-social-media-link {
     font-family: var(--main-font-family);
