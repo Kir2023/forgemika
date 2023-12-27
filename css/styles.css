@@ -171,15 +171,15 @@ main {
 }
 .phone-section {
   padding-top: 24px;
+  padding-right: 24px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   gap: 12px;
-  padding-right: 24px;
 }
 .phone-link {
   font-family: var(--main-font-family);
-  font-size: 18px;
+  font-size: 21px;
   color: var(--secondary-text-color);
   display: flex;
   align-items: center;
@@ -212,6 +212,9 @@ main {
 @media screen and (max-width: 767px) {
   body {
     overflow-y: auto;
+  }
+  .phone-link {
+    font-size: 16px;
   }
   .call-btn {
     min-width: 100px;
