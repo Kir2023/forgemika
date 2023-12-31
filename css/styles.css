@@ -4,8 +4,8 @@
   --main-font-family: 'Arimo', sans-serif;
   --blog-font-family: 'Pattaya', sans-serif;
   --menu-color: #7d7d7d;
-  --active-elements-color: #fed700;
-  --main-text-color: #000000;
+  --active-elements-color: #fe0000;
+  --main-text-color: #1e2c39;
   --secondary-text-color: #fefefe;
 }
 .list {
@@ -78,6 +78,16 @@ main {
   padding-right: 12px;
   padding-left: 12px;
 }
+.language-link {
+  font-family: var(--main-font-family);
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--main-text-color);
+}
+.language-link:hover,
+.language-link:focus {
+  color: var(--active-elements-color);
+}
 .navigation-menu {
   margin-bottom: 40px;
 }
@@ -112,7 +122,7 @@ main {
 .blog {
   font-family: var(--blog-font-family);
   font-size: 32px;
-  color: var(--secondary-text-color);
+  color: var(--main-text-color);
 }
 .social-media-list {
   display: flex;
@@ -126,9 +136,10 @@ main {
 .social-media-link {
   font-family: var(--main-font-family);
   font-size: 18px;
+  font-weight: bold;
   display: flex;
   align-items: center;
-  color: var(--secondary-text-color);
+  color: var(--main-text-color);
 }
 .social-media-link:hover,
 .navigation-link:hover,
@@ -282,7 +293,7 @@ main {
     visibility: visible;
     pointer-events: auto;
     z-index: 1000;
-    max-width: 50%;
+    max-width: 58%;
     transform: translate(0);
     overflow: auto;
     z-index: 1001;
@@ -319,6 +330,12 @@ main {
     padding-top: 20px;
     padding-bottom: 20px;
   }
+  .language-link-mobile {
+    font-family: var(--main-font-family);
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--main-text-color);
+  }
   .mobile-navigation-menu {
     padding-bottom: 20px;
   }
@@ -345,9 +362,10 @@ main {
   .mobile-social-media-link {
     font-family: var(--main-font-family);
     font-size: 12px;
+    font-weight: bold;
     display: flex;
     align-items: center;
-    color: var(--secondary-text-color);
+    color: var(--main-text-color);
   }
   .mobile-social-media-link:hover,
   .navigation-link:hover,
@@ -702,6 +720,8 @@ main {
   text-align: center;
   font-weight: 500;
   font-family: var(--main-font-family);
+  font-weight: bold;
+  color: var(--main-text-color);
   line-height: 1.5;
   letter-spacing: 0.04em;
 }
