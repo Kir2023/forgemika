@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function escape(e) {
       var key = e.code;
 
-      if (key == 'Escape') {
+      if (key == 'Escape' && overlay.classList.contains('active')) {
         document.querySelector('.modal.active').classList.remove('active');
         document.querySelector('.backdrop').classList.remove('active');
       }
