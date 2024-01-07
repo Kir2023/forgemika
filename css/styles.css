@@ -765,9 +765,6 @@ main {
     min-width: 169px;
     padding: 12px 24px;
   }
-  /* .bottom-links-list {
-    margin-left: 40px;
-  } */
   .production-bottom-link {
     font-size: 18px;
   }
@@ -781,6 +778,10 @@ main {
       width: 50px;
       background: var(--active-elements-color);
     }
+  }
+  .current-dot:hover,
+  .current-dot:focus {
+    background: var(--secondary-text-color);
   }
   .production-bottom-link:hover,
   .production-bottom-link:focus {
