@@ -2,7 +2,6 @@
 
 :root {
   --main-font-family: 'Arimo', sans-serif;
-  --blog-font-family: 'Pattaya', sans-serif;
   --menu-color: #7d7d7d;
   --active-elements-color: #fe0000;
   --main-text-color: #1e2c39;
@@ -117,11 +116,6 @@ main {
 .navigation-link {
   font-family: var(--main-font-family);
   font-size: 24px;
-  color: var(--main-text-color);
-}
-.blog {
-  font-family: var(--blog-font-family);
-  font-size: 32px;
   color: var(--main-text-color);
 }
 .social-media-list {
