@@ -2,7 +2,7 @@
 
 :root {
   --main-font-family: 'Arimo', sans-serif;
-  --menu-color: #a6a6a6;
+  --menu-color: #cdced2;
   --active-elements-color: #fe0000;
   --main-text-color: #1e2c39;
   --secondary-text-color: #fefefe;
@@ -183,7 +183,7 @@ main {
 .phone-link {
   font-family: var(--main-font-family);
   font-size: 21px;
-  color: var(--secondary-text-color);
+  color: var(--main-text-color);
   display: flex;
   align-items: center;
   z-index: 100;
@@ -491,8 +491,6 @@ main {
   left: 16px;
   transform: translateY(-50%);
   display: block;
-  fill: var(--main-text-color);
-  stroke: var(--main-text-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-form-wrapper-field {
@@ -794,11 +792,20 @@ main {
   background-size: cover;
   min-height: 100vh;
 }
+.about-phone-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 24px;
+  padding-right: 24px;
+  padding-left: 24px;
+}
 .about-heder {
   font-family: var(--main-font-family);
   font-weight: bold;
   color: var(--main-text-color);
   display: block;
+  background-color: var(--menu-color);
 }
 .about-text {
   font-weight: var(--main-font-family);
@@ -810,10 +817,8 @@ main {
     overflow-y: auto;
   }
   .about-heder {
-    font-size: 24px;
-    text-align: center;
-    padding-top: 48px;
-    padding-bottom: 24px;
+    margin-top: 48px;
+    padding: 6px;
   }
   .about-text {
     font-size: 12px;
@@ -830,11 +835,30 @@ main {
     margin-top: 32px;
   }
   .about-heder {
-    font-size: 44px;
-    padding-bottom: 48px;
+    margin-top: 48px;
+    padding: 12px;
   }
   .about-text {
     font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .about-heder {
+    font-size: 24px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .about-heder {
+    font-size: 17px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .about-heder {
+    font-size: 44px;
   }
 }
 
@@ -859,7 +883,8 @@ main {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: 12px;
+  row-gap: 12px;
+  background-color: var(--menu-color);
 }
 .contacts-page-container {
   display: flex;
@@ -870,6 +895,7 @@ main {
   font-weight: bold;
   color: var(--main-text-color);
   display: block;
+  background-color: var(--menu-color);
 }
 .contacts-form-container {
   border: 2px solid var(--main-text-color);
@@ -914,8 +940,6 @@ main {
   left: 16px;
   transform: translateY(-50%);
   display: block;
-  fill: var(--main-text-color);
-  stroke: var(--main-text-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts-form-wrapper-field {
@@ -926,6 +950,7 @@ main {
 .contacts-form-message {
   resize: none;
   width: 100%;
+  max-height: 60px;
   font-size: 12px;
   letter-spacing: 0.04em;
   color: var(--main-text-color);
@@ -957,6 +982,10 @@ main {
 .contacts-form-submit:focus {
   background-color: var(--active-elements-color);
 }
+.adres-wraper {
+  background-color: var(--menu-color);
+  padding: 16px;
+}
 .adres-heder {
   font-family: var(--main-font-family);
   font-weight: bold;
@@ -986,7 +1015,11 @@ main {
     max-width: 450px;
   }
   .contacts-heder {
-    padding-top: 48px;
+    margin-top: 48px;
+    padding: 6px;
+  }
+  .contacts-phone-wrapper {
+    padding: 6px 6px 6px 0px;
   }
   .contacts-form-heder {
     font-size: 18px;
@@ -1000,6 +1033,9 @@ main {
     min-width: 100px;
     padding: 6px 12px;
     margin-bottom: 12px;
+  }
+  .adres-phone-wrapper {
+    margin-bottom: 40px;
   }
   .adres-heder {
     font-size: 16px;
@@ -1031,15 +1067,23 @@ main {
   }
 }
 
+@media screen and (max-width: 374px) {
+  .contacts-heder {
+    font-size: 17px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .contacts-heder {
-    font-size: 44px;
-    margin-left: 48px;
     margin-top: 48px;
+    padding: 12px;
+  }
+  .contacts-phone-wrapper {
+    padding: 12px;
   }
   .contacts-form-container {
     min-width: 350px;
-    min-height: 625px;
+    min-height: 484px;
     width: 450px;
     margin-left: 32px;
     margin-right: 32px;
@@ -1054,6 +1098,9 @@ main {
   .adres-wraper {
     min-width: 200px;
     margin-right: 20px;
+  }
+  .adres-phone-wrapper {
+    margin-bottom: 80px;
   }
   .adres-heder {
     font-size: 28px;
@@ -1072,5 +1119,8 @@ main {
     margin-bottom: 24px;
     margin-left: 12px;
     margin-right: 12px;
+  }
+  .contacts-heder {
+    font-size: 44px;
   }
 }
