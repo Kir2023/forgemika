@@ -806,6 +806,7 @@ main {
   color: var(--main-text-color);
   display: block;
   background-color: var(--menu-color);
+  border-radius: 10px;
 }
 .about-text {
   font-weight: var(--main-font-family);
@@ -885,6 +886,7 @@ main {
   align-items: flex-end;
   row-gap: 12px;
   background-color: var(--menu-color);
+  border-radius: 10px;
 }
 .contacts-page-container {
   display: flex;
@@ -896,6 +898,7 @@ main {
   color: var(--main-text-color);
   display: block;
   background-color: var(--menu-color);
+  border-radius: 10px;
 }
 .contacts-form-container {
   border: 2px solid var(--main-text-color);
@@ -985,6 +988,7 @@ main {
 .adres-wraper {
   background-color: var(--menu-color);
   padding: 16px;
+  border-radius: 10px;
 }
 .adres-heder {
   font-family: var(--main-font-family);
