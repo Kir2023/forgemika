@@ -582,24 +582,6 @@ main {
   background-position: center;
   background-size: cover;
 }
-.slide-7 {
-  background-image: url(../images/production/slide7.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-.slide-8 {
-  background-image: url(../images/production/slide8.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-.slide-9 {
-  background-image: url(../images/production/slide9.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
 .controls {
   bottom: 40px;
   display: flex;
@@ -700,9 +682,10 @@ main {
   z-index: 2;
 }
 .bottom-links-list {
+  width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 20px;
   padding-left: 20px;
