@@ -194,7 +194,7 @@ main {
 }
 .call-btn {
   border: none;
-  max-width: 196px;
+  max-width: 206px;
   border-radius: 4px;
   font-family: var(--main-font-family);
   font-weight: 500;
@@ -478,7 +478,7 @@ main {
   border: 1px solid rgba(46, 47, 66, 0.2);
   border-radius: 4px;
   background-color: transparent;
-  padding-left: 38px;
+  padding-left: 48px;
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1110,4 +1110,12 @@ main {
   .contacts-heder {
     font-size: 44px;
   }
+}
+
+/* BLOG.HTML */
+
+.blog-wrapper {
+  background-image: url('../images/blog/blog-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
