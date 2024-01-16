@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Магазин меблів та декору</title>
+    <title>Магазин мебели и декора</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -26,30 +26,27 @@
       <div class="language-menu">
         <ul class="language-chooser list">
           <li>
-            <a href="" class="language-link link">UA</a>
+            <a href="./about.html" class="language-link link">UA</a>
           </li>
           <li>
-            <a href="./contacts-ru.html" class="language-link link">RU</a>
+            <a href="" class="language-link link">RU</a>
           </li>
           <li>
-            <a href="./contacts-en.html" class="language-link link">EN</a>
+            <a href="./about-en.html" class="language-link link">EN</a>
           </li>
         </ul>
       </div>
       <div class="navigation-menu">
         <ul class="navigation-list list">
           <li class="navigation-item">
-            <a href="./index.html" class="navigation-link link">Головна</a>
+            <a href="./index.html" class="navigation-link link">Главная</a>
           </li>
           <li class="navigation-item">
-            <a href="./production.html" class="navigation-link link">Продукція</a>
+            <a href="./production.html" class="navigation-link link">Продукция</a>
           </li>
+          <li class="navigation-item current-page">О нас</li>
           <li class="navigation-item">
-            <a href="./about.html" class="navigation-link link">Про нас</a>
-          </li>
-          <li class="navigation-item current-page">Контакти</li>
-          <li class="navigation-item">
-            <a href="./blog.html" class="navigation-link link">Блог</a>
+            <a href="./contacts.html" class="navigation-link link">Контакты</a>
           </li>
         </ul>
       </div>
@@ -98,8 +95,8 @@
         </ul>
       </div>
     </header>
-    <main class="contacts-main">
-      <section class="hero contacts-hero">
+    <main>
+      <section class="hero about-hero">
         <button type="button" class="mobile-menu-open-btn js-open-mobile" data-mobile="1">
           <svg class="mobile-menu-open-btn-icon" width="32" height="22">
             <use href="./images/icons/icons.svg#icon-burger"></use>
@@ -119,34 +116,31 @@
             <div class="mobile-language-menu">
               <ul class="language-chooser list">
                 <li>
-                  <a href="" class="language-link-mobile link">UA</a>
+                  <a href="./about.html" class="language-link-mobile link">UA</a>
                 </li>
                 <li>
-                  <a href="./contacts-ru.html" class="language-link-mobile link">RU</a>
+                  <a href="" class="language-link-mobile link">RU</a>
                 </li>
                 <li>
-                  <a href="./contacts-en.html" class="language-link-mobile link">EN</a>
+                  <a href="./about-en.html" class="language-link-mobile link">EN</a>
                 </li>
               </ul>
             </div>
             <div class="mobile-navigation-menu">
               <ul class="mobile-navigation-list list">
                 <li class="navigation-item">
-                  <a href="./index.html" class="mobile-navigation-link link">Головна</a>
+                  <a href="./index.html" class="mobile-navigation-link link">Главная</a>
                 </li>
                 <li class="navigation-item">
-                  <a href="./production.html" class="mobile-navigation-link link">Продукція</a>
+                  <a href="./production.html" class="mobile-navigation-link link">Продукция</a>
                 </li>
+                <li class="navigation-item current-page">О нас</li>
                 <li class="navigation-item">
-                  <a href="./about.html" class="mobile-navigation-link link">О нас</a>
-                </li>
-                <li class="navigation-item current-page">Контакти</li>
-                <li class="navigation-item">
-                  <a href="./blog.html" class="mobile-navigation-link link">Блог</a>
+                  <a href="./contacts.html" class="mobile-navigation-link link">Контакты</a>
                 </li>
               </ul>
             </div>
-            <div class="social-media">
+            <div class="mobile-social-media">
               <ul class="mobile-social-media-list list">
                 <li class="social-media-item">
                   <a href="mailto:forgemika@gmail.com" class="mobile-social-media-link link">
@@ -193,8 +187,8 @@
           </div>
         </div>
         <div class="backdrop-mobile js-overlay-mobile"></div>
-        <div class="contacts-phone-section">
-          <h1 class="contacts-heder">Контакти</h1>
+        <div class="about-phone-section">
+          <h1 class="about-heder">О нас</h1>
           <div class="contacts-phone-wrapper">
             <a href="tel:+300962008523" class="phone-link link"
               ><svg class="contacts-icon" width="52" height="36">
@@ -202,94 +196,40 @@
               >+300962008523</a
             >
             <button class="call-btn js-open-modal" data-modal="1" type="button">
-              Замовити дзвінок
+              Заказать звонок
             </button>
           </div>
         </div>
-        <div class="contacts-page-container">
-          <div class="contacts-form-container">
-            <h1 class="contacts-form-heder">
-              Залиште заявку і ми зв’яжемося з Вами найближчим часом
-            </h1>
-            <form class="contacts-form">
-              <div class="contacts-form-wrapper">
-                <label for="user-name" class="contacts-form-field-wrapper">Им’я</label>
-                <div class="contacts-form-input-wrapper">
-                  <input
-                    class="contacts-form-input"
-                    type="text"
-                    id="user-name"
-                    name="user-name"
-                    required
-                    pattern="[a-zA-Zа-яА-ЯіІїЇґҐєЄ']+"
-                    title="Тільки літери"
-                  />
-                  <svg class="contacts-form-input-icon" width="28" height="24">
-                    <use href="./images/icons/icons.svg#icon-person"></use>
-                  </svg>
-                </div>
-              </div>
-              <div class="contacts-form-wrapper">
-                <label for="user-tel" class="contacts-form-field-wrapper">Телефон</label>
-                <div class="contacts-form-input-wrapper">
-                  <input
-                    class="contacts-form-input"
-                    type="tel"
-                    id="user-tel"
-                    name="user-tel"
-                    required
-                    pattern="[+][0-9]{2}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-                    title="+xx-xxx-xxx-xx-xx"
-                  />
-                  <svg class="contacts-form-input-icon" width="28" height="24">
-                    <use href="./images/icons/icons.svg#icon-phone"></use>
-                  </svg>
-                </div>
-              </div>
-              <div class="contacts-form-wrapper">
-                <label for="user-email" class="contacts-form-field-wrapper">Електронна пошта</label>
-                <div class="contacts-form-input-wrapper">
-                  <input
-                    class="contacts-form-input"
-                    type="email"
-                    id="user-email"
-                    name="user-email"
-                    required
-                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-                  />
-                  <svg class="contacts-form-input-icon" width="28" height="24">
-                    <use href="./images/icons/icons.svg#icon-email-contacts"></use>
-                  </svg>
-                </div>
-              </div>
-              <div class="contacts-form-wrapper-field">
-                <label for="user-comment" class="contacts-form-field-wrapper">Повідомлення</label>
-                <textarea
-                  class="contacts-form-message"
-                  name="user-comment"
-                  id="user-comment"
-                  placeholder="Введіть текст"
-                ></textarea>
-              </div>
-              <button type="submit" class="contacts-form-submit">Надіслати</button>
-            </form>
-          </div>
-          <div class="adres-wraper">
-            <div class="adres-phone-wrapper">
-              <h2 class="adres-heder">Телефон:</h2>
-              <a href="tel:+300962008523" class="adres-link link"
-                ><svg class="contacts-icon" width="52" height="36">
-                  <use href="./images/icons/icons.svg#icon-phone"></use></svg
-                >+300962008523</a
-              >
-            </div>
-            <h2 class="adres-heder">Електронна пошта:</h2>
-            <a href="mailto:forgemika@gmail.com" class="adres-link link"
-              ><svg class="contacts-icon" width="52" height="36">
-                <use href="./images/icons/icons.svg#icon-email-contacts"></use></svg
-              >forgemika@gmail.com</a
-            >
-          </div>
+        <div class="about-container">
+          <p class="about-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel magnam voluptatum id quis.
+            Voluptatem in, culpa magni aut pariatur nostrum natus, veniam commodi voluptatibus
+            recusandae quia sint vitae distinctio aperiam. Fugit, aliquid quas dolorem quasi amet
+            earum? Exercitationem molestias, ipsum tempore, ut reprehenderit veniam doloremque
+            dignissimos, voluptatibus quia autem praesentium eum cum et? Animi sunt ad error at
+            voluptas eius dolorum! Reiciendis id necessitatibus hic temporibus dicta fuga obcaecati
+            et consequatur recusandae deleniti dolorem nam, nobis debitis aspernatur aliquid,
+            voluptas ipsum repellat totam esse quae corrupti accusantium? Dolor ullam saepe
+            laudantium possimus mollitia incidunt suscipit error, amet dicta consequuntur totam
+            itaque earum distinctio ipsam asperiores culpa vitae. Eius quasi hic tenetur assumenda
+            et! Necessitatibus, doloremque iste id pariatur magni assumenda exercitationem est
+            suscipit ratione minus eligendi nam qui rem repellendus architecto illo accusamus
+            numquam excepturi veniam expedita. Accusantium vitae quod, odit non unde voluptatem eius
+            quam aperiam sapiente corporis iure vel repudiandae totam fugiat cumque ad voluptas
+            modi, rem minima et nam porro eaque expedita! Velit voluptas, laboriosam rerum omnis
+            similique inventore est harum in ea excepturi voluptate recusandae? Numquam suscipit
+            consectetur est perspiciatis ipsum ab consequuntur. Veniam dolores debitis autem nihil
+            inventore dolore nulla consectetur! Quibusdam excepturi cupiditate at eius libero minima
+            totam expedita iste, amet quis, obcaecati nihil reiciendis! Accusantium deserunt,
+            distinctio ipsa, ducimus cumque asperiores vero perspiciatis dolorum fugiat culpa quae
+            praesentium iusto illum sed tenetur. Illum ab deserunt, possimus eaque debitis itaque,
+            dolor ea dicta ipsam eligendi temporibus aliquid omnis quia et dolorum deleniti est vero
+            praesentium vel! Obcaecati reprehenderit saepe neque, amet voluptas necessitatibus, odio
+            cumque aspernatur ut quo cupiditate ducimus aut natus sed accusamus libero dolorum hic
+            odit molestiae. Magni consectetur eligendi hic repudiandae eos aut totam sit porro illo
+            harum inventore corrupti facilis veniam, quisquam ea corporis deleniti quia cupiditate.
+            Hic, error voluptate!
+          </p>
         </div>
       </section>
     </main>
@@ -299,14 +239,14 @@
           <use href="./images/icons/icons.svg#icon-close"></use>
         </svg>
       </button>
-      <p class="modal-text">Залиште заявку і ми зв’яжемося з Вами найближчим часом.</p>
+      <p class="modal-text">Оставьте заявку и мы свяжемся с Вами в ближайшее время.</p>
       <form class="contact-form">
         <div class="contact-form-wrapper">
-          <label for="user-name" class="contact-form-field-wrapper">Им’я</label>
+          <label for="user-name" class="contact-form-field-wrapper">Имя</label>
           <div class="contact-form-input-wrapper">
             <input
               class="contact-form-input"
-              id="user-name-input"
+              id="user-name"
               type="text"
               name="user-name"
               required
@@ -323,7 +263,7 @@
             <input
               class="contact-form-input"
               type="tel"
-              id="user-tel-number"
+              id="user-tel"
               name="user-tel"
               required
               pattern="[+][0-9]{2}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
@@ -334,7 +274,7 @@
             </svg>
           </div>
         </div>
-        <button class="contact-form-submit" type="submit">Надіслати</button>
+        <button class="contact-form-submit" type="submit">Отправить</button>
       </form>
     </div>
     <div class="backdrop js-overlay-modal"></div>
