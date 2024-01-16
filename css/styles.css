@@ -88,6 +88,11 @@ main {
 .language-link:focus {
   color: var(--active-elements-color);
 }
+.current-lang {
+  color: var(--active-elements-color);
+  font-size: 18px;
+  font-weight: bold;
+}
 .navigation-menu {
   margin-bottom: 40px;
 }
