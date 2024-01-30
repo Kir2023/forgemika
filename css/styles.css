@@ -55,10 +55,11 @@ main {
 /* header */
 .page-header {
   background-image: url(../images/background/bg-header.jpg);
-  min-width: 260px;
+  min-width: 270px;
   z-index: 999;
   min-height: 100vh;
   padding-top: 20px;
+  position: fixed;
 }
 .logo-img {
   display: block;
@@ -779,6 +780,7 @@ main {
   background-position: center;
   background-size: cover;
   min-height: 100vh;
+  margin-left: 270px;
 }
 .about-phone-section {
   display: flex;
@@ -940,6 +942,7 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   overflow-x: hidden;
+  margin-left: 270px;
 }
 .contacts-phone-section {
   display: flex;
@@ -1204,4 +1207,5 @@ main {
   background-image: url('../images/blog/blog-bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  margin-left: 270px;
 }
