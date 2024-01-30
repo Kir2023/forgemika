@@ -647,7 +647,7 @@ main {
   background-repeat: no-repeat;
   background-position: center;
 }
-.production-heder {
+.production-header {
   font-family: var(--main-font-family);
   font-weight: bold;
   color: var(--secondary-text-color);
@@ -722,7 +722,7 @@ main {
     gap: 16px;
     margin-left: 0;
   }
-  .production-heder {
+  .production-header {
     font-size: 16px;
   }
   .production-list-btn {
@@ -788,7 +788,7 @@ main {
   padding-right: 24px;
   padding-left: 24px;
 }
-.about-heder {
+.about-header {
   font-family: var(--main-font-family);
   font-weight: bold;
   color: var(--main-text-color);
@@ -796,16 +796,77 @@ main {
   background-color: var(--menu-color);
   border-radius: 10px;
 }
+.about-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-bottom: 20px;
+}
+.about-top {
+  background-color: var(--menu-color);
+  border-radius: 10px;
+  padding: 8px;
+}
+.about-avatar {
+  height: 295px;
+  float: left;
+  margin: 8px 8px 8px 0;
+}
 .about-text {
   font-weight: var(--main-font-family);
   color: var(--main-text-color);
+}
+.about-images {
+  background-color: var(--menu-color);
+  border-radius: 10px;
+  padding: 8px;
+}
+.about-block-header {
+  font-family: var(--main-font-family);
+  font-weight: bold;
+  color: var(--main-text-color);
+  display: block;
+  text-align: center;
+}
+.problems-container {
+  display: flex;
+  justify-content: center;
+}
+.about-problem-image {
+  height: 175px;
+}
+.problems-list-item {
+  text-align: center;
+  background-color: var(--menu-color);
+  border-radius: 10px;
+  padding: 8px;
+}
+.call-btn-bottom {
+  margin: 0 auto;
+  border: none;
+  max-width: 206px;
+  border-radius: 4px;
+  font-family: var(--main-font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  background-color: var(--secondary-text-color);
+  color: var(--main-text-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 100;
+}
+.call-btn-bottom:hover,
+.call-btn-bottom:focus-visible {
+  background-color: var(--active-elements-color);
 }
 
 @media screen and (max-width: 767px) {
   body {
     overflow-y: auto;
   }
-  .about-heder {
+  .about-header {
     margin-top: 48px;
     padding: 6px;
   }
@@ -815,6 +876,18 @@ main {
     padding-right: 12px;
     padding-bottom: 20px;
   }
+  .problems-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+  }
+  .call-btn-bottom {
+    min-width: 100px;
+    padding: 6px 12px;
+    font-size: 16px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -823,30 +896,38 @@ main {
     margin-right: 32px;
     margin-top: 32px;
   }
-  .about-heder {
+  .about-header {
     margin-top: 48px;
     padding: 12px;
   }
   .about-text {
     font-size: 24px;
   }
+  .problems-list {
+    display: flex;
+    column-gap: 24px;
+  }
+  .call-btn-bottom {
+    min-width: 169px;
+    padding: 12px 24px;
+  }
 }
 
 @media screen and (max-width: 1023px) {
-  .about-heder {
+  .about-header {
     font-size: 24px;
     text-align: center;
   }
 }
 
 @media screen and (max-width: 374px) {
-  .about-heder {
+  .about-header {
     font-size: 17px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .about-heder {
+  .about-header {
     font-size: 44px;
   }
 }
@@ -880,7 +961,7 @@ main {
   display: flex;
   align-items: center;
 }
-.contacts-heder {
+.contacts-header {
   font-family: var(--main-font-family);
   font-weight: bold;
   color: var(--main-text-color);
@@ -892,7 +973,7 @@ main {
   border: 2px solid var(--main-text-color);
   background-color: var(--menu-color);
 }
-.contacts-form-heder {
+.contacts-form-header {
   font-family: var(--main-font-family);
   text-align: center;
   padding-top: 12px;
@@ -978,7 +1059,7 @@ main {
   padding: 16px;
   border-radius: 10px;
 }
-.adres-heder {
+.adres-header {
   font-family: var(--main-font-family);
   font-weight: bold;
   color: var(--main-text-color);
@@ -1006,14 +1087,14 @@ main {
   .adres-wraper {
     max-width: 450px;
   }
-  .contacts-heder {
+  .contacts-header {
     margin-top: 48px;
     padding: 6px;
   }
   .contacts-phone-wrapper {
     padding: 6px 6px 6px 0px;
   }
-  .contacts-form-heder {
+  .contacts-form-header {
     font-size: 18px;
     padding-right: 6px;
     padding-left: 6px;
@@ -1029,7 +1110,7 @@ main {
   .adres-phone-wrapper {
     margin-bottom: 25px;
   }
-  .adres-heder {
+  .adres-header {
     font-size: 16px;
   }
   .adres-text {
@@ -1047,7 +1128,7 @@ main {
     padding-top: 36px;
     padding-bottom: 20px;
   }
-  .contacts-heder {
+  .contacts-header {
     font-size: 24px;
     text-align: center;
   }
@@ -1060,13 +1141,13 @@ main {
 }
 
 @media screen and (max-width: 374px) {
-  .contacts-heder {
+  .contacts-header {
     font-size: 17px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .contacts-heder {
+  .contacts-header {
     margin-top: 48px;
     padding: 12px;
   }
@@ -1094,7 +1175,7 @@ main {
   .adres-phone-wrapper {
     margin-bottom: 50px;
   }
-  .adres-heder {
+  .adres-header {
     font-size: 28px;
   }
   .adres-text {
@@ -1112,7 +1193,7 @@ main {
     margin-left: 12px;
     margin-right: 12px;
   }
-  .contacts-heder {
+  .contacts-header {
     font-size: 44px;
   }
 }
