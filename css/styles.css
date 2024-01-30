@@ -780,7 +780,6 @@ main {
   background-position: center;
   background-size: cover;
   min-height: 100vh;
-  margin-left: 270px;
 }
 .about-phone-section {
   display: flex;
@@ -893,6 +892,9 @@ main {
 }
 
 @media screen and (min-width: 768px) {
+  .about-hero {
+    margin-left: 270px;
+  }
   .about-container {
     margin-left: 32px;
     margin-right: 32px;
@@ -942,7 +944,6 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   overflow-x: hidden;
-  margin-left: 270px;
 }
 .contacts-phone-section {
   display: flex;
@@ -1150,6 +1151,9 @@ main {
 }
 
 @media screen and (min-width: 768px) {
+  .contacts-main {
+    margin-left: 270px;
+  }
   .contacts-header {
     margin-top: 48px;
     padding: 12px;
@@ -1207,5 +1211,10 @@ main {
   background-image: url('../images/blog/blog-bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  margin-left: 270px;
+}
+
+@media screen and (min-width: 768px) {
+  .blog-wrapper {
+    margin-left: 270px;
+  }
 }
