@@ -799,9 +799,6 @@ main {
 }
 .about-container {
   display: flex;
-  flex-direction: column;
-  gap: 16px;
-  padding-bottom: 20px;
 }
 .about-top {
   background-color: var(--menu-color);
@@ -828,6 +825,7 @@ main {
   color: var(--main-text-color);
   display: block;
   text-align: center;
+  margin-bottom: 20px;
 }
 .problems-container {
   display: flex;
@@ -867,9 +865,27 @@ main {
   body {
     overflow-y: auto;
   }
+  .about-container {
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+  }
+  .about-top {
+    margin-top: 12px;
+    max-width: 95%;
+  }
+  .about-images,
+  .about-image,
+  .problems-list-item {
+    max-width: 95%;
+    margin: 0 auto;
+  }
   .about-header {
     margin-top: 48px;
     padding: 6px;
+  }
+  .about-block-header {
+    font-size: 16px;
   }
   .about-text {
     font-size: 12px;
@@ -888,6 +904,7 @@ main {
     min-width: 100px;
     padding: 6px 12px;
     font-size: 16px;
+    margin-bottom: 8px;
   }
 }
 
@@ -899,6 +916,9 @@ main {
     margin-left: 32px;
     margin-right: 32px;
     margin-top: 32px;
+    flex-direction: column;
+    gap: 16px;
+    padding-bottom: 20px;
   }
   .about-header {
     margin-top: 48px;
