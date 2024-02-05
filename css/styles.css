@@ -799,23 +799,25 @@ main {
 }
 .about-container {
   display: flex;
-}
-.about-top {
   background-color: var(--menu-color);
   border-radius: 10px;
   padding: 8px;
 }
-.about-avatar {
-  height: 295px;
-  float: left;
-  margin: 8px 8px 8px 0;
+.about-top {
+  background-image: url(../images/about/avatar.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 225px;
+  display: flex;
+  align-items: center;
 }
+.about-text-top,
 .about-text {
   font-family: var(--main-font-family);
   color: var(--main-text-color);
 }
 .about-images {
-  background-color: var(--menu-color);
+  background-color: var(--main-text-color);
   border-radius: 10px;
   padding: 8px;
 }
@@ -827,23 +829,40 @@ main {
   text-align: center;
   margin-bottom: 20px;
 }
-.problems-container {
-  display: flex;
-  justify-content: center;
+.about-block-header-portfolio {
+  font-family: var(--main-font-family);
+  font-weight: bold;
+  color: var(--secondary-text-color);
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
 }
 .about-problem-image {
   height: 175px;
+  max-width: 95%;
+  margin: 0 auto;
 }
 .problems-list-item {
-  text-align: center;
   background-color: var(--menu-color);
   border-radius: 10px;
   padding: 8px;
 }
+.problems-container {
+  background-color: var(--main-text-color);
+  border-radius: 10px;
+  padding: 8px;
+  text-align: center;
+}
+.problems-list-header {
+  font-family: var(--main-font-family);
+  color: var(--secondary-text-color);
+  padding-top: 8px;
+  padding-bottom: 4px;
+}
 .problems-list-text {
   font-family: var(--main-font-family);
   font-size: 16px;
-  color: var(--main-text-color);
+  color: var(--secondary-text-color);
 }
 .call-btn-bottom {
   margin: 0 auto;
@@ -874,10 +893,20 @@ main {
     flex-direction: column;
     gap: 8px;
     align-items: center;
+    margin: 16px auto;
+    margin-bottom: 0;
+    max-width: 96%;
   }
   .about-top {
     margin-top: 12px;
     max-width: 95%;
+  }
+  .about-text-top {
+    font-size: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 20px;
+    padding-top: 300px;
   }
   .about-images,
   .about-image,
@@ -913,6 +942,13 @@ main {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .problems-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .about-hero {
     margin-left: 270px;
@@ -929,12 +965,14 @@ main {
     margin-top: 48px;
     padding: 12px;
   }
+  .about-text-top {
+    font-size: 16px;
+    margin-left: 50%;
+    vertical-align: middle;
+    color: var(--secondary-text-color);
+  }
   .about-text {
     font-size: 16px;
-  }
-  .problems-list {
-    display: flex;
-    column-gap: 24px;
   }
   .call-btn-bottom {
     min-width: 169px;
@@ -958,6 +996,14 @@ main {
 @media screen and (min-width: 1024px) {
   .about-header {
     font-size: 44px;
+  }
+  .problems-list {
+    display: flex;
+    column-gap: 16px;
+    padding-right: 12px;
+  }
+  .problems-list-item {
+    width: calc((100% - 32px) / 3);
   }
 }
 
