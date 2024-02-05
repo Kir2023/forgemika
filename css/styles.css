@@ -811,7 +811,10 @@ main {
   display: flex;
   align-items: center;
 }
-.about-text-top,
+.about-text-top {
+  font-family: var(--main-font-family);
+  color: var(--secondary-text-color);
+}
 .about-text {
   font-family: var(--main-font-family);
   color: var(--main-text-color);
@@ -968,8 +971,6 @@ main {
   .about-text-top {
     font-size: 16px;
     margin-left: 50%;
-    vertical-align: middle;
-    color: var(--secondary-text-color);
   }
   .about-text {
     font-size: 16px;
