@@ -246,7 +246,7 @@ main {
   }
   .mobile-menu-open-btn {
     border: none;
-    background-color: transparent;
+    background-color: var(--main-text-color);
     padding: 0;
     line-height: 0;
     margin-top: 24px;
@@ -255,6 +255,7 @@ main {
     z-index: 500;
   }
   .mobile-menu-open-btn-icon {
+    padding: 3px;
     stroke: var(--secondary-text-color);
   }
 
