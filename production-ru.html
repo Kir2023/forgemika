@@ -511,7 +511,14 @@
       </svg>
     </button>
     <p class="modal-text">Оставьте заявку и мы свяжемся с Вами в ближайшее время.</p>
-    <form class="contact-form">
+    <form class="contact-form uniForm">
+
+      <!-- Hidden Required Fields -->
+      <input type="hidden" name="project_name" value="Forgemika">
+      <input type="hidden" name="admin_email" value="forgemika@gmail.com">
+      <input type="hidden" name="form_subject" value="Заказать звонок">
+      <!-- END Hidden Required Fields -->
+
       <div class="contact-form-wrapper">
         <label for="user-name" class="contact-form-field-wrapper">Имя</label>
         <div class="contact-form-input-wrapper">
@@ -539,6 +546,7 @@
   <script src="./js/modal.js"></script>
   <script src="./js/slider.js"></script>
   <script src="./js/mobile-menu.js"></script>
+  <script src="./js/send-mail.js" defer></script>
 </body>
 
 </html>
