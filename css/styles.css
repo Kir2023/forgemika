@@ -776,7 +776,7 @@ main {
 
 /* hero */
 .about-hero {
-  background: url(../images/about/about-bg.jpg);
+  background: url(../images/about/about-bg.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1014,7 +1014,7 @@ main {
 
 /* hero */
 .contacts-main {
-  background-image: url(../images/contacts/contacts-bg.jpg);
+  background-image: url(../images/contacts/contacts-bg.webp);
   background-repeat: no-repeat;
   background-size: cover;
   overflow-x: hidden;
@@ -1282,7 +1282,7 @@ main {
 /* BLOG.HTML */
 
 .blog-wrapper {
-  background-image: url('../images/blog/blog-bg.jpg');
+  background-image: url('../images/blog/blog-bg.webp');
   background-repeat: no-repeat;
   background-size: cover;
 }
