@@ -1,372 +1,450 @@
 <!DOCTYPE html>
 <html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Магазин меблів та декору</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="shortcut icon" href="images/icons/favicon.ico" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Магазин меблів та декору</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
-  <link rel="stylesheet" href="./css/styles.css" />
-  <link rel="shortcut icon" href="images/icons/favicon.ico" />
-</head>
-
-<body>
-  <header class="page-header">
-    <a href="./index.html" class="header-logo link"><svg class="logo-img" width="220" height="100">
-        <use href="./images/icons/icons.svg#icon-logo"></use>
-      </svg></a>
-    <div class="language-menu">
-      <ul class="language-chooser list">
-        <li class="current-lang">UA</li>
-        <li>
-          <a href="./about-ru.html" class="language-link link">RU</a>
-        </li>
-        <li>
-          <a href="./about-en.html" class="language-link link">EN</a>
-        </li>
-      </ul>
-    </div>
-    <div class="navigation-menu">
-      <ul class="navigation-list list">
-        <li class="navigation-item">
-          <a href="./index.html" class="navigation-link link">Головна</a>
-        </li>
-        <li class="navigation-item">
-          <a href="./production.html" class="navigation-link link">Продукція</a>
-        </li>
-        <li class="navigation-item current-page">Про нас</li>
-        <li class="navigation-item">
-          <a href="./contacts.html" class="navigation-link link">Контакти</a>
-        </li>
-        <li class="navigation-item">
-          <a href="./blog.html" class="navigation-link link">Блог</a>
-        </li>
-      </ul>
-    </div>
-    <div class="social-media">
-      <ul class="social-media-list list">
-        <li class="social-media-item">
-          <a href="mailto:forgemika@gmail.com" class="social-media-link link">
-            <svg class="contacts-icon" width="52" height="26">
-              <use href="./images/icons/icons.svg#icon-email"></use>
-            </svg>forgemika@gmail.com
-          </a>
-        </li>
-        <li class="social-media-item">
-          <a href="https://www.facebook.com/forgemika.interior/" target="_blank" class="social-media-link link">
-            <svg class="contacts-icon" width="52" height="26">
-              <use href="./images/icons/icons.svg#icon-facebook"></use>
-            </svg>forgemika interior
-          </a>
-        </li>
-        <li class="social-media-item">
-          <a href="https://www.instagram.com/forgemika_interior/" target="_blank" class="social-media-link link">
-            <svg class="contacts-icon" width="52" height="35">
-              <use href="./images/icons/icons.svg#icon-instagram"></use>
-            </svg>forgemika_interior
-          </a>
-        </li>
-        <li class="social-media-item">
-          <a href="https://www.youtube.com/channel/UC6qeUnJ-RfOl-cwAsKoNWJA" target="_blank"
-            class="social-media-link link">
-            <svg class="contacts-icon" width="52" height="26">
-              <use href="./images/icons/icons.svg#icon-youtube"></use>
-            </svg>forgemika
-          </a>
-        </li>
-      </ul>
-    </div>
-  </header>
-  <main>
-    <section class="hero about-hero">
-      <button type="button" class="mobile-menu-open-btn js-open-mobile" data-mobile="1">
-        <svg class="mobile-menu-open-btn-icon" width="32" height="22">
-          <use href="./images/icons/icons.svg#icon-burger"></use>
-        </svg>
-      </button>
-      <div class="mobile-menu" data-mobile="1">
-        <div class="mobile-menu-container">
-          <button class="mobile-menu-close-btn data-mobile-close">
-            <svg class="mobile-menu-close-icon" width="8" height="8">
-              <use href="./images/icons/icons.svg#icon-close"></use>
-            </svg>
-          </button>
-          <a href="./index.html" class="header-logo link"><svg class="mobile-logo-img" width="100%" height="80">
-              <use href="./images/icons/icons.svg#icon-logo"></use>
-            </svg></a>
-          <div class="mobile-language-menu">
-            <ul class="language-chooser list">
-              <li class="current-lang">UA</li>
-              <li>
-                <a href="./about-ru.html" class="language-link-mobile link">RU</a>
-              </li>
-              <li>
-                <a href="./about-en.html" class="language-link-mobile link">EN</a>
-              </li>
-            </ul>
-          </div>
-          <div class="mobile-navigation-menu">
-            <ul class="mobile-navigation-list list">
-              <li class="navigation-item">
-                <a href="./index.html" class="mobile-navigation-link link">Головна</a>
-              </li>
-              <li class="navigation-item">
-                <a href="./production.html" class="mobile-navigation-link link">Продукція</a>
-              </li>
-              <li class="navigation-item current-page">Про нас</li>
-              <li class="navigation-item">
-                <a href="./contacts.html" class="mobile-navigation-link link">Контакти</a>
-              </li>
-              <li class="navigation-item">
-                <a href="./blog.html" class="mobile-navigation-link link">Блог</a>
-              </li>
-            </ul>
-          </div>
-          <div class="mobile-social-media">
-            <ul class="mobile-social-media-list list">
-              <li class="social-media-item">
-                <a href="mailto:forgemika@gmail.com" class="mobile-social-media-link link">
-                  <svg class="mobile-contacts-icon" width="52" height="26">
-                    <use href="./images/icons/icons.svg#icon-email"></use>
-                  </svg>forgemika@gmail.com
-                </a>
-              </li>
-              <li class="social-media-item">
-                <a href="https://www.facebook.com/forgemika.interior/" target="_blank"
-                  class="mobile-social-media-link link">
-                  <svg class="mobile-contacts-icon" width="52" height="26">
-                    <use href="./images/icons/icons.svg#icon-facebook"></use>
-                  </svg>forgemika interior
-                </a>
-              </li>
-              <li class="social-media-item">
-                <a href="https://www.instagram.com/forgemika_interior/" target="_blank"
-                  class="mobile-social-media-link link">
-                  <svg class="mobile-contacts-icon" width="52" height="35">
-                    <use href="./images/icons/icons.svg#icon-instagram"></use>
-                  </svg>forgemika_interior
-                </a>
-              </li>
-              <li class="social-media-item">
-                <a href="https://www.youtube.com/channel/UC6qeUnJ-RfOl-cwAsKoNWJA" target="_blank"
-                  class="mobile-social-media-link link">
-                  <svg class="mobile-contacts-icon" width="52" height="26">
-                    <use href="./images/icons/icons.svg#icon-youtube"></use>
-                  </svg>forgemika
-                </a>
-              </li>
-            </ul>
+  <body>
+    <header class="page-header">
+      <a href="./index.html" class="header-logo link"
+        ><svg class="logo-img" width="220" height="100">
+          <use href="./images/icons/icons.svg#icon-logo"></use></svg
+      ></a>
+      <div class="language-menu">
+        <ul class="language-chooser list">
+          <li class="current-lang">UA</li>
+          <li>
+            <a href="./about-ru.html" class="language-link link">RU</a>
+          </li>
+          <li>
+            <a href="./about-en.html" class="language-link link">EN</a>
+          </li>
+        </ul>
+      </div>
+      <div class="navigation-menu">
+        <ul class="navigation-list list">
+          <li class="navigation-item">
+            <a href="./index.html" class="navigation-link link">Головна</a>
+          </li>
+          <li class="navigation-item">
+            <a href="./production.html" class="navigation-link link">Продукція</a>
+          </li>
+          <li class="navigation-item current-page">Про нас</li>
+          <li class="navigation-item">
+            <a href="./contacts.html" class="navigation-link link">Контакти</a>
+          </li>
+          <li class="navigation-item">
+            <a href="./blog.html" class="navigation-link link">Блог</a>
+          </li>
+        </ul>
+      </div>
+      <div class="social-media">
+        <ul class="social-media-list list">
+          <li class="social-media-item">
+            <a href="mailto:forgemika@gmail.com" class="social-media-link link">
+              <svg class="contacts-icon" width="52" height="26">
+                <use href="./images/icons/icons.svg#icon-email"></use></svg
+              >forgemika@gmail.com
+            </a>
+          </li>
+          <li class="social-media-item">
+            <a
+              href="https://www.facebook.com/forgemika.interior/"
+              target="_blank"
+              class="social-media-link link"
+            >
+              <svg class="contacts-icon" width="52" height="26">
+                <use href="./images/icons/icons.svg#icon-facebook"></use></svg
+              >forgemika interior
+            </a>
+          </li>
+          <li class="social-media-item">
+            <a
+              href="https://www.instagram.com/forgemika_interior/"
+              target="_blank"
+              class="social-media-link link"
+            >
+              <svg class="contacts-icon" width="52" height="35">
+                <use href="./images/icons/icons.svg#icon-instagram"></use></svg
+              >forgemika_interior
+            </a>
+          </li>
+          <li class="social-media-item">
+            <a
+              href="https://www.youtube.com/channel/UC6qeUnJ-RfOl-cwAsKoNWJA"
+              target="_blank"
+              class="social-media-link link"
+            >
+              <svg class="contacts-icon" width="52" height="26">
+                <use href="./images/icons/icons.svg#icon-youtube"></use></svg
+              >forgemika
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="hero about-hero">
+        <button type="button" class="mobile-menu-open-btn js-open-mobile" data-mobile="1">
+          <svg class="mobile-menu-open-btn-icon" width="32" height="22">
+            <use href="./images/icons/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+        <div class="mobile-menu" data-mobile="1">
+          <div class="mobile-menu-container">
+            <button class="mobile-menu-close-btn data-mobile-close">
+              <svg class="mobile-menu-close-icon" width="8" height="8">
+                <use href="./images/icons/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+            <a href="./index.html" class="header-logo link"
+              ><svg class="mobile-logo-img" width="100%" height="80">
+                <use href="./images/icons/icons.svg#icon-logo"></use></svg
+            ></a>
+            <div class="mobile-language-menu">
+              <ul class="language-chooser list">
+                <li class="current-lang">UA</li>
+                <li>
+                  <a href="./about-ru.html" class="language-link-mobile link">RU</a>
+                </li>
+                <li>
+                  <a href="./about-en.html" class="language-link-mobile link">EN</a>
+                </li>
+              </ul>
+            </div>
+            <div class="mobile-navigation-menu">
+              <ul class="mobile-navigation-list list">
+                <li class="navigation-item">
+                  <a href="./index.html" class="mobile-navigation-link link">Головна</a>
+                </li>
+                <li class="navigation-item">
+                  <a href="./production.html" class="mobile-navigation-link link">Продукція</a>
+                </li>
+                <li class="navigation-item current-page">Про нас</li>
+                <li class="navigation-item">
+                  <a href="./contacts.html" class="mobile-navigation-link link">Контакти</a>
+                </li>
+                <li class="navigation-item">
+                  <a href="./blog.html" class="mobile-navigation-link link">Блог</a>
+                </li>
+              </ul>
+            </div>
+            <div class="mobile-social-media">
+              <ul class="mobile-social-media-list list">
+                <li class="social-media-item">
+                  <a href="mailto:forgemika@gmail.com" class="mobile-social-media-link link">
+                    <svg class="mobile-contacts-icon" width="52" height="26">
+                      <use href="./images/icons/icons.svg#icon-email"></use></svg
+                    >forgemika@gmail.com
+                  </a>
+                </li>
+                <li class="social-media-item">
+                  <a
+                    href="https://www.facebook.com/forgemika.interior/"
+                    target="_blank"
+                    class="mobile-social-media-link link"
+                  >
+                    <svg class="mobile-contacts-icon" width="52" height="26">
+                      <use href="./images/icons/icons.svg#icon-facebook"></use></svg
+                    >forgemika interior
+                  </a>
+                </li>
+                <li class="social-media-item">
+                  <a
+                    href="https://www.instagram.com/forgemika_interior/"
+                    target="_blank"
+                    class="mobile-social-media-link link"
+                  >
+                    <svg class="mobile-contacts-icon" width="52" height="35">
+                      <use href="./images/icons/icons.svg#icon-instagram"></use></svg
+                    >forgemika_interior
+                  </a>
+                </li>
+                <li class="social-media-item">
+                  <a
+                    href="https://www.youtube.com/channel/UC6qeUnJ-RfOl-cwAsKoNWJA"
+                    target="_blank"
+                    class="mobile-social-media-link link"
+                  >
+                    <svg class="mobile-contacts-icon" width="52" height="26">
+                      <use href="./images/icons/icons.svg#icon-youtube"></use></svg
+                    >forgemika
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="backdrop-mobile js-overlay-mobile"></div>
-      <div class="about-phone-section">
-        <h1 class="about-header">Про нас</h1>
-        <div class="contacts-phone-wrapper">
-          <a href="tel:+380962008523" class="phone-link link"><svg class="contacts-icon" width="52" height="36">
-              <use href="./images/icons/icons.svg#icon-phone"></use>
-            </svg>+380962008523</a>
-          <button class="call-btn js-open-modal" data-modal="1" type="button">
+        <div class="backdrop-mobile js-overlay-mobile"></div>
+        <div class="about-phone-section">
+          <h1 class="about-header">Про нас</h1>
+          <div class="contacts-phone-wrapper">
+            <a href="tel:+380962008523" class="phone-link link"
+              ><svg class="contacts-icon" width="52" height="36">
+                <use href="./images/icons/icons.svg#icon-phone"></use></svg
+              >+380962008523</a
+            >
+            <button class="call-btn js-open-modal" data-modal="1" type="button">
+              Замовити дзвінок
+            </button>
+          </div>
+        </div>
+        <div class="about-container">
+          <div class="about-top">
+            <p class="about-text-top">
+              Привіт!<br />Я - Михайло Щасливий, засновник Forgemika.<br />
+              За понад двадцять років моєї творчої діяльності в сфері металообробки, я став свідком
+              сталого розвитку і розширення наших можливостей.<br />
+              Тепер ми створюємо вироби, які поєднують міцність металу, природну красу дерева та
+              унікальний вигляд смоли, вироби, які відображають сучасний погляд на ремесло.
+            </p>
+          </div>
+          <div class="about-text-block">
+            <p class="about-text">
+              Назва "Forgemika", є символом трансформації та інновацій, вказує на довгий шлях
+              розвитку, майстерності та прагнення до нового в мистецтві обробки матеріалів. Вона
+              поєднує два слова: "Forge", що у перекладі з англійської означає "кузня", та "Mika" –
+              це моє ім'я, у творчому переосмисленні. Ця назва відображає перехід від класичного
+              ковальства до нових принципів і сучасних тенденцій. Запрошую Вас відкрити для себе
+              Forgemika - місце, де зустрічаються традиція, інновація та вміння перетворювати звичні
+              нам матеріали в щось особливе.
+            </p>
+          </div>
+          <div class="about-images-wrapper">
+            <h2 class="about-block-header-portfolio">Наші роботи</h2>
+          <div class="about-images">
+            <img
+              src="./images/about/product1.jpg"
+              alt="Наші роботи"
+              class="about-image"
+              onclick="showImage(this.src)"
+            />
+            <img
+              src="./images/about/product2.jpg"
+              alt="Наші роботи"
+              class="about-image"
+              onclick="showImage(this.src)"
+            />
+            <img
+              src="./images/about/product3.jpg"
+              alt="Наші роботи"
+              class="about-image"
+              onclick="showImage(this.src)"
+            />
+            <img
+              src="./images/about/product4.jpg"
+              alt="Наші роботи"
+              class="about-image"
+              onclick="showImage(this.src)"
+            />
+          </div>
+          <div id="images-modal-container" class="modal-container">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modal-image" class="modal-image" />
+          </div>
+          </div>
+          <div class="about-text-block">
+            <p class="about-text">
+              Моя мета - стати Вашим помічником у виборі інтер'єрних рішень, які не лише
+              трансформують Ваш простір, але й надихнуть на створення унікального стилю та атмосфери
+              затишку у Вашій оселі. Вибір меблів та декоративних елементів може здатися буденним
+              завданням, проте це не виключає можливості перетворити його на творчий та емоційно
+              захоплюючий процес. Визнаю, мені часто доводилося чути відгуки про мій надмірний
+              креатив у сфері, яка здається звичайною. Але саме цей креатив допомагає створювати
+              непересічні рішення. Давайте разом виявимо ті проблеми, які заважають зробити
+              оптимальний вибір, і розглянемо можливі шляхи їх подолання:
+            </p>
+          </div>
+          <div class="about-problems">
+            <ul class="problems-list list">
+              <li class="problems-list-item">
+                <div class="problems-container">
+                  <img src="./images/about/problems.webp" alt="" class="about-problem-image" />
+                  <h3 class="problems-list-header">Проблеми:</h3>
+                  <p class="problems-list-text">
+                    Шукаєте унікальні, високоякісні меблі та предмети інтер’єру, які б враховували
+                    якість матеріалів, функціональність, естетику та доступність? Ті, що
+                    відображають Ваш стиль і практичні для щоденного використання, з можливістю
+                    індивідуального замовлення та унікальним дизайном?
+                  </p>
+                </div>
+              </li>
+              <li class="problems-list-item">
+                <div class="problems-container">
+                  <img src="./images/about/obstacles.webp" alt="" class="about-problem-image" />
+                  <h3 class="problems-list-header">Перешкоди:</h3>
+                  <p class="problems-list-text">
+                    Вибір предметів інтер’єру часто ускладнюється перенасиченістю ринку
+                    різноманітними варіантами і брендами, нестачею інформації про продукти, високими
+                    цінами на унікальні вироби, обмеженим вибором у місцевих магазинах, сумнівами
+                    щодо якості, проблемами з доставкою та відсутністю індивідуального підходу.
+                  </p>
+                </div>
+              </li>
+              <li class="problems-list-item">
+                <div class="problems-container">
+                  <img src="./images/about/solution.webp" alt="" class="about-problem-image" />
+                  <h3 class="problems-list-header">Рішення:</h3>
+                  <p class="problems-list-text">
+                    Ми пропонуємо персоналізацію своїх продуктів, надаємо докладну інформацію про
+                    вироби, зручний онлайн-інтерфейс для покупок, гарантії якості та послуги
+                    післяпродажного обслуговування, публікацію відгуків та кейс-стадій успішних
+                    проектів, а також надаємо активну підтримку нашим клієнтам.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="about-text-block">
+            <p class="about-text">
+              Наша місія полягає у створенні унікальних, високоякісних авторських інтер’єрних
+              виробів які не просто відображають бездоганний дизайн і функціональність, але й
+              втілюють гармонію з природою. Ми прагнемо застосовувати натуральні форми і матеріали,
+              щоб кожен наш продукт ніс в собі частку природної краси та спокою. Ставимо на меті
+              надихати клієнтів нашими творіннями, створюючи неповторний стиль та комфорт у їхніх
+              домівках, та водночас зберігати та відновлювати форми, які втілюють нашу повагу та
+              любов до природи.
+            </p>
+          </div>
+          <div class="about-text-block">
+            <h2 class="about-block-header">Асортимент нашої продукції:</h2>
+            <p class="about-text">
+              Банкетки для взуття — ідеальне поєднання стилю та функціональності для Вашого дому.
+              Солідна металева основа не лише надає неповторний вигляд, але й гарантує довговічність
+              та стабільну міцність конструкції. Під сидінням, обтягнутим велюром, що запрошує до
+              відпочинку, Ви знайдете зручний простір для зберігання улюблених пар взуття. Це не
+              просто місце для сидіння — це Ваш персональний острівець комфорту в передпокої.<br />
+              <br />
+              Біокаміни — виготовлені з відбірної дубової або соснової деревини, в тому числі "
+              амбарної ", відзначаються вишуканістю та екологічністю. Яскраве і живе полум’я надає
+              Вашому простору відчуття тепла та затишку. Працюють на біоетанолі, не викидаючи ні
+              краплі диму, кіптяви чи сажі.<br />
+              <br />
+              Настінні авторські годинники зі сталі, деревини та епоксидної смоли нададуть Вашому
+              простору неповторного шарму. Рослинна композиція, механізм плавного ходу, зручне та
+              надійне кріплення на стіну. А ще, вони можуть стати унікальним подарунком на будь-яке
+              святкування. Забрендовані під будь-який привід, вони вражатимуть своєю красою та
+              оригінальністю.<br />
+              <br />
+              Свічники — авторські вироби, в різних варіаціях народжені з поєднання сталі, деревини
+              та епоксидної смоли або бетону.<br />
+              <br />
+              Системи зберігання — прекрасний спосіб ефективно та зі смаком використовувати простір.
+              В асортименті приліжкові тумби, декоративні полиці, стелажі, вішалки для одягу та
+              інше.<br />
+              <br />
+              Світильники з дерева та епоксидної смоли - це не просто освітлення, а справжнє
+              мистецтво. Часто відображаючи стиль наших годинників, можуть бути об’єднані в
+              комплекти, щоб Ваш простір засяяв новим виміром краси. Ці світильники подарують ніжне,
+              лагідне світло, вони не лише функціональні, але й навіть у вимкненому стані чудово
+              доповнять та вдосконалять Ваш інтер'єр.<br />
+              <br />
+              Столи та консолі — кожен кут, кожна лінія - це симфонія матеріалів та дизайну.
+              Створені з вишуканих порід деревини – від благородного дуба до м'якої текстури сосни,
+              кожен шматочок деревини оповитий інтригуючою історією, а сміливе поєднання з металом і
+              прозорістю епоксидної смоли створює естетику, що випромінює сучасність та
+              елегантність.<br />
+              <br />
+              Ми пропонуємо як стандартні варіанти виробів, так і індивідуальні рішення, адаптовані
+              до конкретних потреб і побажань клієнтів.
+            </p>
+          </div>
+          <div class="about-text-block">
+            <h2 class="about-block-header">
+              Це дещо про мене та компанію.<br />
+              Тепер я хотів би більше дізнатися про Вас.
+            </h2>
+            <p class="about-text">
+              Я розумію, як важливо, щоб кожна деталь Вашого дому відповідала Вашим мріям та
+              очікуванням. Можливо, Вас турбують питання дизайну, точності розмірів чи
+              функціональності нашої продукції? Або ж Вас хвилює, як безпечно та вчасно ваше
+              замовлення прибуде до Вашого дому?<br />
+              <br />
+              Якщо Вам потрібна допомога у вирішенні цих питань або якщо Ви шукаєте поради щодо
+              нашої політики повернення та гарантій, я тут, щоб вислухати та допомогти. Ваша
+              історія, Ваші бажання, Ваші мрії – це те, що надихає мене як дизайнера і власника
+              майстерні меблів. Дозвольте нам спільно створити щось неймовірне, що буде радувати вас
+              роками.<br />
+              <br />
+              Не соромтеся звертатися – діалог з Вами це не просто розмова, це початок подорожі до
+              створення ідеального простору, який відображатиме Вашу унікальність. Зв’яжіться зі
+              мною сьогодні, і разом ми втілимо ваші мрії в життя.
+            </p>
+          </div>
+          <button class="call-btn-bottom js-open-modal" data-modal="1" type="button">
             Замовити дзвінок
           </button>
         </div>
-      </div>
-      <div class="about-container">
-        <div class="about-top">
-          <p class="about-text-top">
-            Привіт!<br />Я - Михайло Щасливий, засновник Forgemika.<br />
-            За понад двадцять років моєї творчої діяльності в сфері металообробки, я став свідком
-            сталого розвитку і розширення наших можливостей.<br />
-            Тепер ми створюємо вироби, які поєднують міцність металу, природну красу дерева та
-            унікальний вигляд смоли, вироби, які відображають сучасний погляд на ремесло.
-          </p>
-        </div>
-        <div class="about-text-block">
-          <p class="about-text">
-            Назва "Forgemika", є символом трансформації та інновацій, вказує на довгий шлях
-            розвитку, майстерності та прагнення до нового в мистецтві обробки матеріалів. Вона
-            поєднує два слова: "Forge", що у перекладі з англійської означає "кузня", та "Mika" –
-            це моє ім'я, у творчому переосмисленні. Ця назва відображає перехід від класичного
-            ковальства до нових принципів і сучасних тенденцій. Запрошую Вас відкрити для себе
-            Forgemika - місце, де зустрічаються традиція, інновація та вміння перетворювати звичні
-            нам матеріали в щось особливе.
-          </p>
-        </div>
-        <div class="about-images">
-          <h2 class="about-block-header-portfolio">Наші роботи</h2>
-          <img src="./images/about/cat.jpg" alt="" class="about-image" />
-        </div>
-        <div class="about-text-block">
-          <p class="about-text">
-            Моя мета - стати Вашим помічником у виборі інтер'єрних рішень, які не лише
-            трансформують Ваш простір, але й надихнуть на створення унікального стилю та атмосфери
-            затишку у Вашій оселі. Вибір меблів та декоративних елементів може здатися буденним
-            завданням, проте це не виключає можливості перетворити його на творчий та емоційно
-            захоплюючий процес. Визнаю, мені часто доводилося чути відгуки про мій надмірний
-            креатив у сфері, яка здається звичайною. Але саме цей креатив допомагає створювати
-            непересічні рішення. Давайте разом виявимо ті проблеми, які заважають зробити
-            оптимальний вибір, і розглянемо можливі шляхи їх подолання:
-          </p>
-        </div>
-        <div class="about-problems">
-          <ul class="problems-list list">
-            <li class="problems-list-item">
-              <div class="problems-container">
-                <img src="./images/about/problems.webp" alt="" class="about-problem-image" />
-                <h3 class="problems-list-header">Проблеми:</h3>
-                <p class="problems-list-text">
-                  Шукаєте унікальні, високоякісні меблі та предмети інтер’єру, які б враховували якість матеріалів,
-                  функціональність, естетику та доступність? Ті, що відображають Ваш стиль і практичні для щоденного
-                  використання, з можливістю індивідуального замовлення та унікальним дизайном?
-                </p>
-              </div>
-            </li>
-            <li class="problems-list-item">
-              <div class="problems-container">
-                <img src="./images/about/obstacles.webp" alt="" class="about-problem-image" />
-                <h3 class="problems-list-header">Перешкоди:</h3>
-                <p class="problems-list-text">
-                  Вибір предметів інтер’єру часто ускладнюється перенасиченістю ринку різноманітними варіантами і
-                  брендами, нестачею інформації про продукти, високими цінами на унікальні вироби, обмеженим вибором у
-                  місцевих магазинах, сумнівами щодо якості, проблемами з доставкою та відсутністю індивідуального
-                  підходу.
-                </p>
-              </div>
-            </li>
-            <li class="problems-list-item">
-              <div class="problems-container">
-                <img src="./images/about/solution.webp" alt="" class="about-problem-image" />
-                <h3 class="problems-list-header">Рішення:</h3>
-                <p class="problems-list-text">
-                  Ми пропонуємо персоналізацію своїх продуктів, надаємо докладну інформацію про вироби, зручний
-                  онлайн-інтерфейс для покупок, гарантії якості та послуги післяпродажного обслуговування, публікацію
-                  відгуків та кейс-стадій успішних проектів, а також надаємо активну підтримку нашим клієнтам.
-                </p>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="about-text-block">
-          <p class="about-text">
-            Наша місія полягає у створенні унікальних, високоякісних авторських інтер’єрних виробів які не просто
-            відображають бездоганний дизайн і функціональність, але й втілюють гармонію з природою. Ми прагнемо
-            застосовувати натуральні форми і матеріали, щоб кожен наш продукт ніс в собі частку природної краси та
-            спокою. Ставимо на меті надихати клієнтів нашими творіннями, створюючи неповторний стиль та комфорт у їхніх
-            домівках, та водночас зберігати та відновлювати форми, які втілюють нашу повагу та любов до природи.
-          </p>
-        </div>
-        <div class="about-text-block">
-          <h2 class="about-block-header">Асортимент нашої продукції:</h2>
-          <p class="about-text">
-            Банкетки для взуття — ідеальне поєднання стилю та функціональності для Вашого дому. Солідна металева основа
-            не лише надає неповторний вигляд, але й гарантує довговічність та стабільну міцність конструкції. Під
-            сидінням, обтягнутим велюром, що запрошує до відпочинку, Ви знайдете зручний простір для зберігання
-            улюблених пар взуття. Це не просто місце для сидіння — це Ваш персональний острівець комфорту в
-            передпокої.<br />
-            <br />
-            Біокаміни — виготовлені з відбірної дубової або соснової деревини, в тому числі " амбарної ", відзначаються
-            вишуканістю та екологічністю. Яскраве і живе полум’я надає Вашому простору відчуття тепла та затишку.
-            Працюють на біоетанолі, не викидаючи ні краплі диму, кіптяви чи сажі.<br />
-            <br />
-            Настінні авторські годинники зі сталі, деревини та епоксидної смоли нададуть Вашому простору неповторного
-            шарму. Рослинна композиція, механізм плавного ходу, зручне та надійне кріплення на стіну. А ще, вони можуть
-            стати унікальним подарунком на будь-яке святкування. Забрендовані під будь-який привід, вони вражатимуть
-            своєю красою та оригінальністю.<br />
-            <br />
-            Свічники — авторські вироби, в різних варіаціях народжені з поєднання сталі, деревини та епоксидної смоли
-            або бетону.<br />
-            <br />
-            Системи зберігання — прекрасний спосіб ефективно та зі смаком використовувати простір. В асортименті
-            приліжкові тумби, декоративні полиці, стелажі, вішалки для одягу та інше.<br />
-            <br />
-            Світильники з дерева та епоксидної смоли - це не просто освітлення, а справжнє мистецтво. Часто відображаючи
-            стиль наших годинників, можуть бути об’єднані в комплекти, щоб Ваш простір засяяв новим виміром краси. Ці
-            світильники подарують ніжне, лагідне світло, вони не лише функціональні, але й навіть у вимкненому стані
-            чудово доповнять та вдосконалять Ваш інтер'єр.<br />
-            <br />
-            Столи та консолі — кожен кут, кожна лінія - це симфонія матеріалів та дизайну. Створені з вишуканих порід
-            деревини – від благородного дуба до м'якої текстури сосни, кожен шматочок деревини оповитий інтригуючою
-            історією, а сміливе поєднання з металом і прозорістю епоксидної смоли створює естетику, що випромінює
-            сучасність та елегантність.<br />
-            <br />
-            Ми пропонуємо як стандартні варіанти виробів, так і індивідуальні рішення, адаптовані до конкретних потреб і
-            побажань клієнтів.
-          </p>
-        </div>
-        <div class="about-text-block">
-          <h2 class="about-block-header">Це дещо про мене та компанію.<br />
-            Тепер я хотів би більше дізнатися про Вас.</h2>
-          <p class="about-text">
-            Я розумію, як важливо, щоб кожна деталь Вашого дому відповідала Вашим мріям та очікуванням. Можливо, Вас
-            турбують
-            питання дизайну, точності розмірів чи функціональності нашої продукції? Або ж Вас хвилює, як безпечно та
-            вчасно ваше
-            замовлення прибуде до Вашого дому?<br />
-            <br />
-            Якщо Вам потрібна допомога у вирішенні цих питань або якщо Ви шукаєте поради щодо нашої політики повернення
-            та гарантій,
-            я тут, щоб вислухати та допомогти. Ваша історія, Ваші бажання, Ваші мрії – це те, що надихає мене як
-            дизайнера і
-            власника майстерні меблів. Дозвольте нам спільно створити щось неймовірне, що буде радувати вас
-            роками.<br />
-            <br />
-            Не соромтеся звертатися – діалог з Вами це не просто розмова, це початок подорожі до створення ідеального
-            простору, який
-            відображатиме Вашу унікальність. Зв’яжіться зі мною сьогодні, і разом ми втілимо ваші мрії в життя.
-          </p>
-        </div>
-        <button class="call-btn-bottom js-open-modal" data-modal="1" type="button">
-          Замовити дзвінок
-        </button>
-      </div>
-    </section>
-  </main>
-  <div class="modal" data-modal="1">
-    <button type="button" class="modal-close-btn data-modal-close">
-      <svg class="modal-close-icon" width="8" height="8">
-        <use href="./images/icons/icons.svg#icon-close"></use>
-      </svg>
-    </button>
-    <p class="modal-text">Залиште заявку і ми зв’яжемося з Вами найближчим часом.</p>
-    <form class="contact-form uniForm">
+      </section>
+    </main>
+    <div class="modal" data-modal="1">
+      <button type="button" class="modal-close-btn data-modal-close">
+        <svg class="modal-close-icon" width="8" height="8">
+          <use href="./images/icons/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <p class="modal-text">Залиште заявку і ми зв’яжемося з Вами найближчим часом.</p>
+      <form class="contact-form uniForm">
+        <!-- Hidden Required Fields -->
+        <input type="hidden" name="project_name" value="Forgemika" />
+        <input type="hidden" name="admin_email" value="forgemika@gmail.com" />
+        <input type="hidden" name="form_subject" value="Замовити дзвінок" />
+        <!-- END Hidden Required Fields -->
 
-      <!-- Hidden Required Fields -->
-      <input type="hidden" name="project_name" value="Forgemika">
-      <input type="hidden" name="admin_email" value="forgemika@gmail.com">
-      <input type="hidden" name="form_subject" value="Замовити дзвінок">
-      <!-- END Hidden Required Fields -->
-
-      <div class="contact-form-wrapper">
-        <label for="user-name" class="contact-form-field-wrapper">Им’я</label>
-        <div class="contact-form-input-wrapper">
-          <input class="contact-form-input" id="user-name" type="text" name="user-name" required
-            pattern="[a-zA-Zа-яА-ЯіІїЇґҐєЄ']+" />
-          <svg class="contact-form-input-icon" width="28" height="24">
-            <use href="./images/icons/icons.svg#icon-person"></use>
-          </svg>
+        <div class="contact-form-wrapper">
+          <label for="user-name" class="contact-form-field-wrapper">Им’я</label>
+          <div class="contact-form-input-wrapper">
+            <input
+              class="contact-form-input"
+              id="user-name"
+              type="text"
+              name="user-name"
+              required
+              pattern="[a-zA-Zа-яА-ЯіІїЇґҐєЄ']+"
+            />
+            <svg class="contact-form-input-icon" width="28" height="24">
+              <use href="./images/icons/icons.svg#icon-person"></use>
+            </svg>
+          </div>
         </div>
-      </div>
-      <div class="contact-form-wrapper">
-        <label for="user-tel" class="contact-form-field-wrapper">Телефон</label>
-        <div class="contact-form-input-wrapper">
-          <input class="contact-form-input" type="tel" id="user-tel" name="user-tel" required pattern="[+][0-9]{12}"
-            title="+xxxxxxxxxxxx" />
-          <svg class="contact-form-input-icon" width="28" height="24">
-            <use href="./images/icons/icons.svg#icon-phone"></use>
-          </svg>
+        <div class="contact-form-wrapper">
+          <label for="user-tel" class="contact-form-field-wrapper">Телефон</label>
+          <div class="contact-form-input-wrapper">
+            <input
+              class="contact-form-input"
+              type="tel"
+              id="user-tel"
+              name="user-tel"
+              required
+              pattern="[+][0-9]{12}"
+              title="+xxxxxxxxxxxx"
+            />
+            <svg class="contact-form-input-icon" width="28" height="24">
+              <use href="./images/icons/icons.svg#icon-phone"></use>
+            </svg>
+          </div>
         </div>
-      </div>
-      <button class="contact-form-submit" type="submit">Надіслати</button>
-    </form>
-  </div>
-  <div class="backdrop js-overlay-modal"></div>
-  <script src="./js/modal.js"></script>
-  <script src="./js/mobile-menu.js"></script>
-  <script src="./js/send-mail.js" defer></script>
-</body>
-
+        <button class="contact-form-submit" type="submit">Надіслати</button>
+      </form>
+    </div>
+    <div class="backdrop js-overlay-modal"></div>
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/send-mail.js" defer></script>
+    <script src="./js/resize-images.js" defer></script>
+  </body>
 </html>

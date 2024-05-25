@@ -194,10 +194,39 @@
             ability to transform ordinary materials into something special converge.
           </p>
         </div>
-        <div class="about-images">
+        <div class="about-images-wrapper">
           <h2 class="about-block-header-portfolio">Our products</h2>
-          <img src="./images/about/cat.jpg" alt="" class="about-image" />
-        </div>
+          <div class="about-images">
+            <img
+              src="./images/about/product1.jpg"
+              alt="Our products"
+              class="about-image"
+              onclick="showImage(this.src)"
+            />
+            <img
+              src="./images/about/product2.jpg"
+              alt="Our products"
+              class="about-image"
+              onclick="showImage(this.src)"
+            />
+            <img
+              src="./images/about/product3.jpg"
+              alt="Our products"
+              class="about-image"
+              onclick="showImage(this.src)"
+            />
+            <img
+              src="./images/about/product4.jpg"
+              alt="Our products"
+              class="about-image"
+              onclick="showImage(this.src)"
+            />
+          </div>
+          <div id="images-modal-container" class="modal-container">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modal-image" class="modal-image" />
+          </div>
+          </div>
         <div class="about-text-block">
           <p class="about-text">
             My goal is to be your guide in choosing interior solutions that not only transform your space but also
@@ -385,6 +414,7 @@
   <script src="./js/modal.js"></script>
   <script src="./js/mobile-menu.js"></script>
   <script src="./js/send-mail.js" defer></script>
+  <script src="./js/resize-images.js"></script>
 </body>
 
 </html>
